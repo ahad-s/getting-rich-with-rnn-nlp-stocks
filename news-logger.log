@@ -1,0 +1,15 @@
+DEBUG:root:ERORR AT INITIAL [Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?]
+DEBUG:root:ERORR AT BW-SCRAPE [HTTP Error 404: Not Found]
+DEBUG:root:URL: /news/employer-full-robo-retirement-savings-144126590.html
+DEBUG:root:ERORR AT BBG-SCRAPE [HTTP Error 404: Not Found]
+DEBUG:root:URL: http://www.bloomberg.com/news/articles/2016-12-01/brown-names-u-s-rep-xavier-becerra-as-california-s-next-a-g
+WARNING:root:Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+WARNING:root:Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+WARNING:root:Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+WARNING:root:Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+DEBUG:root:ERORR AT BW-SCRAPE [HTTP Error 404: Not Found]
+DEBUG:root:URL: /news/methyl-methacrylate-market-united-kingdom-212000485.html
+DEBUG:root:ERORR AT SOME URL [[Errno 28] No space left on device]
+DEBUG:root:URL: http://www.bloomberg.com/news/articles/2016-12-02/as-schultz-steps-down-next-starbucks-ceo-brings-tech-savvy
+DEBUG:root:ERORR AT INITIAL [[Errno 28] No space left on device]
+WARNING:root:Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
