@@ -1,0 +1,13 @@
+LISLE, Ill.--(BUSINESS WIRE)--
+Molex has introduced a surface-mount version of its right-angle SMT headers for the next-generation HSAutoLink™ Interconnect System.
+The Molex HSAutoLink™ Interconnect System leverages high-speed technologies to meet rising data bandwidth in vehicle-to-vehicle communications, infotainment and telematics in the connected vehicle segment. The ruggedized, industry-standard USCAR-30 right-angle SMT header is compliant with all USB 2.0, LVDS (Low-Voltage Differential Signaling) and BroadR-Reach automotive Ethernet electrical and EMI (electromagnetic interference) shielding requirements for automotive and commercial vehicle applications.
+“The new SMT right-angle header for the HSAutoLink™ Interconnect System gives customers an additional mounting option for manufacturing process optimization,” said Laurent Stickeir, global product manager, Molex. “The one-piece design ensures a high-integrity, robust connector interface.”
+The Molex right-angle SMT header design optimizes available reverse-side PCB space. The innovative side ribs on the housing provide PCB stabilization during one-step processing. The high-temperature-rated plastic housing safeguards all the internals during lead-free, reflow soldering. Flexible packaging options, including both rigid tray and tape and reel, support fully automated assembly. Several color-coded keying options are also available
+For more information about the new right-angle SMT headers for the HSAutoLink™ Interconnect System from Molex, please visit: www.molex.com/link/hsautolink.html.
+About Molex:
+Molex brings together innovation and technology to deliver electronic solutions to customers worldwide. With a presence in more than 40 countries, Molex offers a full suite of solutions and services for many markets, including data communications, consumer electronics, industrial, automotive, commercial vehicle and medical. For more information, please visit www.molex.com.
+Molex Resources:
+Molex is a registered trademark of Molex, LLC in the United States of America and may be registered in other jurisdictions.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161201005303/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}

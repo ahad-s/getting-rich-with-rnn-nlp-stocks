@@ -1,0 +1,60 @@
+BOUDRY, Switzerland--(BUSINESS WIRE)--
+Celgene Corporation (CELG) today announced interim results from the ABOUND clinical trial program evaluating the use of ABRAXANE® (paclitaxel protein-bound particles for injectable suspension) (albumin-bound) in patients with advanced non-small cell lung cancer (NSCLC). Interim data being presented from the ABOUND trials during the IASLC 17th World Conference on Lung Cancer (WCLC) reinforces the benefit of ABRAXANE/carboplatin doublet therapy in first-line NSCLC.
+Interim ABOUND.70+ data in 128 elderly patients (≥ 70 years old) receiving first-line treatment with ABRAXANE/carboplatin for advanced NSCLC found that 91 (73%) patients experienced grade ≥2 peripheral neuropathy (PN) or grade ≥3 myelosuppression [primary endpoint]. At the time of the analyses, the median overall survival was 14.6 months and the median progression-free survival was 6.2 months, pooled across the two treatment arms [secondary endpoints]. Patients were randomized to receive first-line treatment with ABRAXANE/carboplatin either continuous weekly or weekly every three weeks with a one-week break.i Overall, 80 percent of patients discontinued treatment and the majority did so due to adverse events (24 percent) or disease progression (34 percent). Grade ≥2 PN was reported in 34% of patients, and grade ≥3 neutropenia, anemia, and thrombocytopenia was observed in 52%, 21% and 21% of patients, respectively. i
+The interim ABOUND.sqm data in 284 patients receiving first-line induction treatment with ABRAXANE/carboplatin for stage IIIB/IV squamous NSCLC showed that the safety profile was consistent with that previously reported for the squamous subset in the pivotal Phase III trial.ii,iii During the induction phase, all patients received four 21-day cycles of standard ABRAXANE/carboplatin therapy.ii Overall, 119 patients (42 percent) discontinued treatment during the induction phase. The majority of patients discontinued treatment due to disease progression (34 percent) or adverse events (24 percent). The most common grade 3/4 treatment emergent adverse events (TEAEs) were hematologic and included anemia (26 percent), neutropenia (43 percent) and thrombocytopenia (15 percent).ii
+Both ABOUND trials also evaluated quality of life utilizing the Lung Cancer Symptom 3-item index Scale (LCSS), Symptom Burden Index, Lung Cancer Symptom and Pulmonary Symptom Scores and the EuroQol five dimensions, five level questionnaire (EQ-5D-5L). These interim analyses suggest that quality of life was generally maintained or improved in both patient populations.iv,v
+"These early data from the ABOUND clinical trial program are very encouraging, as they are consistent with the findings related to these hard to treat non-small cell lung cancer patient subgroups seen in the pivotal ABRAXANE Phase III trial," said Michael Pehl, President, Hematology and Oncology for Celgene. "These data, coupled with the ongoing studies of ABRAXANE in combination with novel agents and immunotherapies, provide us with a deeper understanding of how to treat challenging patient populations and will help us continue to develop future treatment options."
+With the rapidly evolving lung cancer treatment landscape, Celgene remains committed to continuing to explore new combinations that will benefit those living with lung cancer, including patients who may not benefit from immunotherapy and targeted therapy. ABRAXANE is being actively evaluated as a foundation therapy in these patients.
+Interim results of the phase I study of the immunotherapy agent nivolumab in combination with ABRAXANE/carboplatin in 22 patients with Stage IIIB/IV NSCLC will also be presented at WCLC. Patients received four cycles of standard ABRAXANE/carboplatin therapy in combination with nivolumab, followed by nivolumab monotherapy starting at cycle 5. The primary endpoints were number of patients with dose limiting toxicity and percentage of patients with grade 3/4 TEAEs or treatment discontinuation due to a TEAE. The interim data suggests that combining ABRAXANE/carboplatin with nivolumab may have promising anti-tumor activity in patients with advanced NSCLC with no unexpected adverse events (AEs).vi
+The most common grade 3/4 AEs observed during the study included neutropenia (45 percent), anemia (35 percent), hypokalemia (15 percent), and vomiting (15 percent).vi The study has been expanded and patients are currently enrolling in part 2. Additional data on the safety and efficacy of this combination in multiple tumor types will be presented at a future medical meeting.
+Additional ABRAXANE Data Presented at WCLC
+There will also be an oral presentation at WCLC focused on new findings from the phase III registration study for ABRAXANE (Abstract 4460), which reports on the impact of depth of response on survival in patients with advanced NSCLC treated with first-line chemotherapy. Real-world analyses of US veterans with NSCLC are also being presented at WCLC, evaluating prevalence of squamous NSCLC in veterans vs. the general population (Abstract 4737) and the prevalence of autoimmune disease in veterans with NSCLC (Abstract 4745).
+Additional investigator initiated studies presented at WCLC also evaluated ABRAXANE as first-line (Posters P2.03a-028 and P2.06-018), second-line (Posters P2.03a-040, P2.03a-054 and P2.03a-056) or third-line (Poster P2.06-015) treatment for advanced NSCLC patients, as well as in the adjuvant (Poster P2.03a-070) and neoadjuvant (Poster P2.04-034) settings and in chemo-naïve patients with an EGFR mutation (Poster P3.02b-061).
+ABOUT ABOUND
+ABOUND is a multi-phase, open-label, multicenter clinical trial program evaluating the use of ABRAXANE in combination with carboplatin or other novel agents, including immunotherapy, as first- or second-line treatment of patients with advanced non-small cell lung cancer (NSCLC). The ABOUND trials included patients 70 years and older, as well as those with poorer performance status or squamous disease and those receiving second-line+ treatment.vii,viii,ix,x
+ABOUT THE ABRAXANE/NIVOLUMAB STUDY
+This is a phase I, open-label, multicenter, safety study of ABRAXANE-based chemotherapy regimens administered prior to and/or in combination with nivolumab in pancreatic cancer, NSCLC and metastatic breast cancer. This is a six arm study assessing two treatment arms per tumor-type/indication.
+About ABRAXANE® (nab-paclitaxel)
+ABRAXANE® is indicated for the first-line treatment of locally advanced or metastatic non–small cell lung cancer, in combination with carboplatin, in patients who are not candidates for curative surgery or radiation therapy.
+Important Safety Information
+WARNING - NEUTROPENIA
+CONTRAINDICATIONS
+Neutrophil Counts
+Hypersensitivity
+WARNINGS AND PRECAUTIONS
+Hematologic Effects
+Nervous System
+Hypersensitivity
+Hepatic Impairment
+Albumin (Human)
+Use in Pregnancy: Pregnancy Category D
+Use in Men
+ADVERSE REACTIONS
+Non–Small Cell Lung Cancer (NSCLC) Study
+Postmarketing Experience With ABRAXANE and Other Paclitaxel Formulations
+DRUG INTERACTIONS
+USE IN SPECIFIC POPULATIONS
+Nursing Mothers
+Pediatric
+Geriatric
+Renal Impairment
+DOSAGE AND ADMINISTRATION
+Please see full Prescribing Information, including Boxed WARNING.
+Please refer to the Summary of Product Characteristics for full European prescribing information.
+About Celgene
+Celgene Corporation, headquartered in Summit, New Jersey, is an integrated global biopharmaceutical company engaged primarily in the discovery, development and commercialization of innovative therapies for the treatment of cancer and inflammatory diseases through next-generation solutions in protein homeostasis, immuno-oncology, epigenetics, immunology and neuro-inflammation. For more information, please visit www.celgene.com. Follow Celgene on Social Media: @Celgene, Pinterest, LinkedIn, FaceBook and YouTube.
+Forward-Looking Statements
+This press release contains forward-looking statements, which are generally statements that are not historical facts. Forward-looking statements can be identified by the words "expects," "anticipates," "believes," "intends," "estimates," "plans," "will," "outlook" and similar expressions. Forward-looking statements are based on management's current plans, estimates, assumptions and projections, and speak only as of the date they are made. We undertake no obligation to update any forward-looking statement in light of new information or future events, except as otherwise required by law. Forward-looking statements involve inherent risks and uncertainties, most of which are difficult to predict and are generally beyond our control. Actual results or outcomes may differ materially from those implied by the forward-looking statements as a result of the impact of a number of factors, many of which are discussed in more detail in our Annual Report on Form 10-K and our other reports filed with the Securities and Exchange Commission.
+i Langer C, et al. Safety and Efficacy Results from ABOUND.70+: nab-Paclitaxel + Carboplatin in Elderly Patients with Advanced NSCLC. Abstract 4630. Presented at the 2016 World Conference of Lung Cancer (WCLC), December 4-7, 2016.
+ii McCleod M, et al. Interim Results from ABOUND.sqm: Safety of nab-Paclitaxel + Carboplatin Induction Therapy in Squamous Non-Small Cell Lung Cancer. Abstract 4391. Presented at the 2016 World Conference of Lung Cancer (WCLC), December 4-7, 2016.
+iii Socinsky M, et al. Safety and efficacy of weekly nab®-paclitaxel in combination with carboplatin as first-line therapy in elderly patients with advanced non-small-cell lung cancer. Annals of Oncology. 24: 314–321, 2013.
+iv Weiss J, et al. ABOUND.70+: Interim Quality of Life Results of nab-Paclitaxel + Carboplatin Treatment of Elderly Patients with NSCLC. Abstract 4286. Presented at the 2016 World Conference of Lung Cancer (WCLC), December 4-7, 2016.
+v Thomas M, et al. nab-Paclitaxel + Carboplatin Induction Therapy in Squamous Non-Small Cell Lung Cancer: Interim Quality of Life Results from ABOUND.sqm. Abstract 4343. Presented at the 2016 World Conference of Lung Cancer (WCLC), December 4-7, 2016.
+vi Goldman J, et al. Interim Results from the Phase I Study of Nivolumab + nab-Paclitaxel + Carboplatin in Non-Small Cell Lung Cancer. Abstract 4127. Presented at the 2016 World Conference of Lung Cancer (WCLC), December 4-7, 2016.
+vii ClinicalTrials.gov. Safety and Efficacy Study of Nab®Paclitaxel With CC486 or Nab®Paclitaxel With Durvalumab, and Nab®Paclitaxel Monotherapy as Second/Thirdline Treatment for Advanced Nonsmall Cell Lung Cancer (abound2L+). Available at https://www.clinicaltrials.gov/ct2/show/NCT02250326?term=ABOUNd&rank=3. Accessed November 30, 2016.
+viii ClinicalTrials.gov. Safety and Efficacy Study of Abraxane in Combination With Carboplatin to Treat Advanced NSCL Cancer in the Elderly (ABOUND 70+). Available at https://www.clinicaltrials.gov/ct2/show/NCT02151149?term=ABOUNd&rank=2. Accessed November 30, 2016.
+ix ClinicalTrials.gov. Phase II Safety and Tolerability Trial With NabPaclitaxel Plus Carboplatin Followed by NabPaclitaxel for First Line Treatment of NSCLC Subjects With ECOG PS 2 (AboundPS2). Available at https://www.clinicaltrials.gov/ct2/show/NCT02289456?term=ABOUNd&rank=4. Accessed November 30, 2016.
+x ClinicalTrials.gov. Safety and Efficacy Study of Abraxane as Maintenance Treatment After Abraxane Plus Carboplatin in 1st Line Stage IIIB / IV Squamous Cell Non-small Cell Lung Cancer (aboundsqm). Available at https://www.clinicaltrials.gov/ct2/show/NCT02027428?term=ABOUNd&rank=6. Accessed November 30, 2016.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161206005418/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} .bwuline {text-decoration: underline !important;} ;}

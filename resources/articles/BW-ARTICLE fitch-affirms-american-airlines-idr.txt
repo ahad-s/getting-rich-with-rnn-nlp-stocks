@@ -1,0 +1,107 @@
+NEW YORK--(BUSINESS WIRE)--
+Fitch Ratings has affirmed the Long-Term Issuer-Default Rating (IDR) for American Airlines Group Inc. (American, AAG) at 'BB-'. The ratings also apply to American's primary operating subsidiary, American Airlines, Inc. The Rating Outlook is Stable.
+Fitch has also taken various rating actions on American's EETCs as described at the end of this release.
+The 'BB-' rating is supported by the solid operating margins and sizeable cash flows that American has generated since its merger with US Airways in December 2013 as well as the management of its merger integration process over the past three years. Fitch expects that American's margins will likely come down from peak levels generated in 2015 and 2016 due to cost pressures, the possibility of higher fuel prices, and a soft unit-revenue environment. Nevertheless, profitability is expected to remain well above levels generated prior to American's bankruptcy and merger with US Airways.
+Positive factors for American are offset by a leveraged balance sheet and a cash deployment strategy that has been much more aggressive than its peers. Fitch calculates American's adjusted debt/EBITDAR at 4.1x for the LTM period ended Sept. 30, 2016. Leverage is expected to rise to around or slightly above 4.5x over the next 1-2 years, putting American at the high end of its peer group, and making it potentially more vulnerable in the event of an economic downturn.
+KEY RATING DRIVERS
+American continues to produce financial results that are significantly improved from the levels generated prior to its bankruptcy and merger with US Airways. Financial performance is driven in part due to lower fuel prices and a generally positive operating environment, but also due to improvements at American such as a broader route network, a more efficient fleet and other merger synergies.
+These improvements allowed American to generate operating margins that were in line with industry averages over the past three years and in 2015 that were better than both Delta and United. EBIT margins slipped compared to peers in the first part of 2016 but Fitch believes that American has the opportunity to close that gap in the near term. Labor cost pressures are expected at competing airlines in 2017. Meanwhile American still has some cost benefits to gain as it moves through its merger integration, potentially leading to a relative outperformance.
+American's relative underperformance this year is due in part to costs involved with on-going merger integration efforts and due to the timing of the ratification of new contracts with its labor unions. Pay increases included in union contracts began to flow through AAL's results in 2016, pushing non-fuel CASM up by 3.6% through the first nine months of the year. Over the same time period, revenue per available seat mile declined by 5.2%, leading to lower operating margins. Despite these headwinds, American produced a 16.2% EBIT margin in the LTM period, down slightly from the 17.8% produced in 2015, but well above the 11.9% or 8.1% margins produced in FY 2014 or 2013.
+Cash Deployment and Capital Structure Are Key Rating Negatives:
+Fitch views American Airlines' cash deployment strategy as a key limiter of near-term rating upgrades and as a potential concern for future negative rating actions. American has announced aggregate share repurchase authorizations of $9 billion since 2014. The company spent over $3.9 billion on share repurchases through the first nine months of this year, while taking on $2.8 billion in incremental debt. American's total on-balance-sheet debt has increased by nearly $6.8 billion since it emerged from bankruptcy in 2013.
+Fitch expects total debt to peak this year and to decline incrementally thereafter. Nevertheless, American's leveraged balance sheet leaves it in a position where credit metrics could deteriorate quickly in the event of a downturn. Fitch's concerns are partly offset by American's target of maintaining at least $6.5 billion in total liquidity including its $2.4 billion in revolver availability. Such a sizeable liquidity balance should allow the company to weather rough patches in the industry.
+FCF to Improve as Capital Spending Moderates:
+Fitch expects lower capital spending to drive material improvements in FCF in the coming years, and to potentially allow the company to begin to bring its total debt balance down. FCF is expected to rise to the low- to mid-single digits as a percentage of revenue by 2017 and 2018.
+Capital spending has been particularly high in recent years, as American has gone through a major overhaul of its fleet. Capex topped $4.4 billion in 2013, $5.3 billion in 2014 and $6 billion in 2015. American has stated that total capex will be around $5.6 billion in 2016 and will start to decline thereafter as deliveries moderate. Fitch expects 2017 capital expenditures to be around $4.5 billion-$5 billion. Capital spending for 2018 will likely be materially lower still as aircraft deliveries drop off sharply.
+Integration Risks Are Largely in the Past
+Merger integration risks were a key concern following American's December 2013 merger with US Airways but those risks are now largely in the past. American managed through major IT projects such as switching to a new flight operating system in 2016 and switching to a single reservation system in 2015, with no disruption to its operations. As American moves past the merger integration, one-time costs should wane, and the company can re-focus its efforts on improving other areas of the business.
+Liquidity
+Financial flexibility is seen as sufficient for the rating, and is supported by the company's large cash balance and two revolvers totaling $2.4 billion in availability. Debt maturities are expected to range from $1.8 billion to $3.6 billion per year over the next three years. Fitch expects operating cash flow and on-balance-sheet cash to be sufficient to cover these obligations. However, the company will likely need to rely on debt markets in the coming years to fund its capital spending.
+KEY ASSUMPTIONS
+Fitch's key assumptions within the rating case for American Airlines include
+--Capacity growth in the low single digits through the forecast period;
+--Continued moderate economic growth in the U.S. over the near term, translating into stable demand for air travel;
+--Jet fuel prices equating to roughly $55/barrel on average for 2017, increasing to approximately $65/barrel by the end of the forecast period;
+--Mid- to high-single-digit RASM decline in 2016 followed by low growth thereafter.
+RATING SENSITIVITIES
+Future actions that may individually or collectively cause Fitch to take a positive rating action include: adjusted debt/EBITDAR sustained below 4x
+--FFO fixed charge coverage sustained around 3x
+--Free cash flow generation above Fitch's base case expectations
+--Moderating policies toward financial leverage and shareholder-friendly cash deployment
+Future actions that may individually or collectively cause Fitch to take a negative rating action include:
+--Adjusted debt/EBITDAR sustained above 4.5x
+--EBITDAR margins deteriorating into the low double-digit range
+--Shareholder-focused cash deployment at the expense of a healthy balance sheet
+--Liquidity sustained below 15% of LTM revenue
+Fitch has affirmed the following ratings:
+American Airlines Group Inc.
+--Long-Term IDR at 'BB-';
+--Senior unsecured notes at 'BB-/RR4'.
+American Airlines, Inc.
+--Long-Term IDR at 'BB-';
+--Senior secured credit facilities at 'BB+/RR1'.
+--Series 2016 revenue bonds issued by the New York Transportation Development Corporation at 'BB'.
+The 'BB+/RR1' rating also applies to the $1 billion term loan B1 that American is in the process of pricing. Proceeds of the $1 billion term loan will be used to refinance American's existing $970 million term loan B-1. The loan will be secured by take-off and landing slots at LaGuardia and Washington Reagan.
+EETC Ratings
+Fitch has also reviewed the ratings for multiple American Airlines backed EETCs concurrent with its review of American's Issuer Default Rating (IDR).
+Fitch has downgraded the following rating:
+American Airlines Pass-Through Trust Certificates, Series 2013-2
+--Class A certificates to 'BBB' from 'BBB+'
+The downgrade is driven by declining appraisal values for the 777-200ERs contained in this portfolio. Asset value weakness has caused this senior tranche to no longer pass Fitch's 'BBB' category stress test. Thus the 'BBB' rating is reached by notching up from American Airlines' IDR and incorporates a high affirmation factor, the presence of a liquidity facility, and solid recovery expectations under Fitch's 'BB' level stress scenario. Fitch has applied a one-notch uplift for recovery for this transaction reflecting recovery expectations of greater than 90%. Note that Fitch's bottoms-up approach stipulates that subordinated tranches should achieve recovery expectations of a least 115% to warrant a notch of ratings uplift. That threshold does not apply in this instance, since this tranche represents the senior claim in the waterfall.
+Fitch has upgraded the following ratings:
+US Airways 2013-1 Pass Through Trust
+--Class B certificates to 'BBB-' from 'BB+';
+US Airways 2012-2 Pass Through Trust
+--Class B certificates to 'BBB-' from 'BB+';
+US Airways 2012-1 Pass Through Trust
+--Class B certificates to 'BBB-' from 'BB+'.
+The ratings upgrades are based on improved recovery prospects for each of these B tranches as the transactions have amortized.
+Fitch has affirmed the following ratings:
+American Airlines Pass Through Trust Certificates, Series 2015-1
+--Class A certificates at 'A';
+--Class B certificates at 'BBB'.
+American Airlines Pass Through Trust Certificates, Series 2014-1
+--Class A certificates at 'A';
+--Class B certificates at 'BBB-'.
+American Airlines Pass Through Trust Certificates, Series 2013-2
+--Class B certificates at 'BB+';
+--Class C certificates at 'BB-'.
+American Airlines Pass Through Trust Certificates, Series 2013-1
+--Class A certificates at 'A-';
+--Class B certificates at 'BB+';
+--Class C certificates at 'BB-'.
+US Airways 2013-1 Pass Through Trust
+--Class A certificates at 'A'.
+US Airways 2012-2 Pass Through Trust
+--Class A certificates at 'A';
+--Class C certificates at 'BB-'.
+US Airways 2012-1 Pass Through Trust
+--Class A certificates at 'A'.
+Senior tranche affirmations are supported by levels of overcollateralization that continue to allow the transactions to pass Fitch's 'A' level stress scenarios. However, American Airlines' 2013-1 senior tranche is potentially at risk for a future downgrade given its limited headroom within Fitch's 'A' level stress test, which has been exacerbated by weakening valuations for older 777s and 737s.
+Subordinated tranche affirmations are based on the affirmation of American's corporate rating and on Fitch's unchanged opinion of the likelihood of affirmation for these pools of aircraft.
+EETC Rating Sensitivities
+Senior tranche ratings are primarily based on a top-down analysis based on the value of the collateral. Therefore, a negative rating action could be driven by an unexpected decline in collateral values.
+Subordinated tranche ratings are based off of the underlying airline IDR. As such, Fitch may upgrade various B tranches by a notch if American were upgraded to 'BB'. However, the B tranches may not be downgraded if American were downgraded to 'B+', as Fitch's EETC criteria allows for a wider notching differential for 'BB' and 'B' category rated airlines.
+Summary of Financial Statement Adjustments
+Fitch sets aside a certain amount of cash and revolver availability as 'not readily available' to reflect a minimum amount of cash that may be necessary for the company to carry on day-to-day operations and is thus not immediately available for things like debt payments or capital expenditures. Fitch estimates this amount at roughly 10% of LTM revenue.
+Additional information is available on www.fitchratings.com
+Applicable Criteria
+Criteria for Rating Non-Financial Corporates (pub. 27 Sep 2016)
+https://www.fitchratings.com/site/re/885629
+Rating Aircraft Enhanced Equipment Trust Certificates (pub. 29 Sep 2016)
+https://www.fitchratings.com/site/re/887869
+Recovery Ratings and Notching Criteria for Non-Financial Corporate Issuers (pub. 21 Nov 2016)
+https://www.fitchratings.com/site/re/890199
+Additional Disclosures
+Dodd-Frank Rating Information Disclosure Form
+https://www.fitchratings.com/creditdesk/press_releases/content/ridf_frame.cfm?pr_id=1015921
+Solicitation Status
+https://www.fitchratings.com/gws/en/disclosure/solicitation?pr_id=1015921
+Endorsement Policy
+https://www.fitchratings.com/regulatory
+ALL FITCH CREDIT RATINGS ARE SUBJECT TO CERTAIN LIMITATIONS AND DISCLAIMERS. PLEASE READ THESE LIMITATIONS AND DISCLAIMERS BY FOLLOWING THIS LINK: HTTPS://WWW.FITCHRATINGS.COM/UNDERSTANDINGCREDITRATINGS. IN ADDITION, RATING DEFINITIONS AND THE TERMS OF USE OF SUCH RATINGS ARE AVAILABLE ON THE AGENCY'S PUBLIC WEB SITE AT WWW.FITCHRATINGS.COM. PUBLISHED RATINGS, CRITERIA, AND METHODOLOGIES ARE AVAILABLE FROM THIS SITE AT ALL TIMES. FITCH'S CODE OF CONDUCT, CONFIDENTIALITY, CONFLICTS OF INTEREST, AFFILIATE FIREWALL, COMPLIANCE, AND OTHER RELEVANT POLICIES AND PROCEDURES ARE ALSO AVAILABLE FROM THE CODE OF CONDUCT SECTION OF THIS SITE. FITCH MAY HAVE PROVIDED ANOTHER PERMISSIBLE SERVICE TO THE RATED ENTITY OR ITS RELATED THIRD PARTIES. DETAILS OF THIS SERVICE FOR RATINGS FOR WHICH THE LEAD ANALYST IS BASED IN AN EU-REGISTERED ENTITY CAN BE FOUND ON THE ENTITY SUMMARY PAGE FOR THIS ISSUER ON THE FITCH WEBSITE.
+Copyright © 2016 by Fitch Ratings, Inc., Fitch Ratings Ltd. and its subsidiaries. 33 Whitehall Street, NY, NY 10004. Telephone: 1-800-753-4824, (212) 908-0500. Fax: (212) 480-4435. Reproduction or retransmission in whole or in part is prohibited except by permission. All rights reserved. In issuing and maintaining its ratings and in making other reports (including forecast information), Fitch relies on factual information it receives from issuers and underwriters and from other sources Fitch believes to be credible. Fitch conducts a reasonable investigation of the factual information relied upon by it in accordance with its ratings methodology, and obtains reasonable verification of that information from independent sources, to the extent such sources are available for a given security or in a given jurisdiction. The manner of Fitch's factual investigation and the scope of the third-party verification it obtains will vary depending on the nature of the rated security and its issuer, the requirements and practices in the jurisdiction in which the rated security is offered and sold and/or the issuer is located, the availability and nature of relevant public information, access to the management of the issuer and its advisers, the availability of pre-existing third-party verifications such as audit reports, agreed-upon procedures letters, appraisals, actuarial reports, engineering reports, legal opinions and other reports provided by third parties, the availability of independent and competent third- party verification sources with respect to the particular security or in the particular jurisdiction of the issuer, and a variety of other factors. Users of Fitch's ratings and reports should understand that neither an enhanced factual investigation nor any third-party verification can ensure that all of the information Fitch relies on in connection with a rating or a report will be accurate and complete. Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts. As a result, despite any verification of current facts, ratings and forecasts can be affected by future events or conditions that were not anticipated at the time a rating or forecast was issued or affirmed.
+The information in this report is provided "as is" without any representation or warranty of any kind, and Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report. The rating does not address the risk of loss due to risks other than credit risk, unless such risk is specifically mentioned. Fitch is not engaged in the offer or sale of any security. All Fitch reports have shared authorship. Individuals identified in a Fitch report were involved in, but are not solely responsible for, the opinions stated therein. The individuals are named for contact purposes only. A report providing a Fitch rating is neither a prospectus nor a substitute for the information assembled, verified and presented to investors by the issuer and its agents in connection with the sale of the securities. Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities. Such fees generally vary from US$1,000 to US$750,000 (or the applicable currency equivalent) per issue. In certain cases, Fitch will rate all or a number of issues issued by a particular issuer, or insured or guaranteed by a particular insurer or guarantor, for a single annual fee. Such fees are expected to vary from US$10,000 to US$1,500,000 (or the applicable currency equivalent). The assignment, publication, or dissemination of a rating by Fitch shall not constitute a consent by Fitch to use its name as an expert in connection with any registration statement filed under the United States securities laws, the Financial Services and Markets Act of 2000 of the United Kingdom, or the securities laws of any particular jurisdiction. Due to the relative efficiency of electronic publishing and distribution, Fitch research may be available to electronic subscribers up to three days earlier than to print subscribers.
+For Australia, New Zealand, Taiwan and South Korea only: Fitch Australia Pty Ltd holds an Australian financial services license (AFS license no. 337123) which authorizes it to provide credit ratings to wholesale clients only. Credit ratings information published by Fitch is not intended to be used by persons who are retail clients within the meaning of the Corporations Act 2001
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161205006370/en/

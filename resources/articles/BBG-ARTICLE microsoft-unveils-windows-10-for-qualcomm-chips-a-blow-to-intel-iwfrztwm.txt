@@ -1,0 +1,83 @@
+Microsoft Corp. is creating a version of the Windows 10 operating system that will run on laptops powered by Qualcomm Inc. chips, a move that could erode Intel Corp.’s dominance in PCs and help the software maker gain a bigger foothold in mobile computing.Chips from Qualcomm, the largest maker of semiconductors used in phones, are designed to work on limited battery life and have integrated cellular connections. Bringing Windows 10 to notebooks and tablets that run on these chips will result in sleeker devices that can go days without needing to be plugged in and are always connected, the companies said. The first devices will be available as soon as next year, Microsoft said in a blog post, without specifying which manufacturers have committed to make them.If successful, the effort will pose the first major challenge to Intel technology in personal computers since the market’s birth in the early 1980s. It’ll also bring to Windows the Qualcomm chips that have been integral to the explosion of mobile computing, a growing business Microsoft has failed to crack. The tie-up isn’t the first time the world’s largest software maker has tried to bring Windows to computers running on chip technology other than Intel’s -- the previous attempt garnered few sales and resulted in huge losses on unsold inventory.This time, Microsoft will give Windows 10 for Qualcomm chips the ability to run programs written for the traditional version of the platform, using software called an emulator. That means the computers and tablets will be able to run regular Microsoft Office programs, as well as applications like Adobe Photoshop. Generally an emulator slows down a computer’s performance, but Microsoft and San Diego-based Qualcomm said mobile hardware is now fast enough that users won’t notice a decline.“This is a commitment to bring mobility into Windows,” Cristiano Amon, head of Qualcomm’s chip business, said in an interview. Windows users will get thinner and lighter machines that are always connected to the Internet, he said.Microsoft, based in Redmond, Washington, will announce the effort early Thursday at the annual Windows Hardware Engineering Community conference in Shenzhen, China.In 2012, Microsoft released a version of Windows for computers running on chips designed for mobile devices, based on ARM Holdings Plc semiconductor technology. Yet apart from Microsoft itself, which fielded the Surface RT, only four device makers signed up to make tablets to run the software. Only one other company had products available at launch, and two never shipped a compatible device in any significant volume. Within nine months, Microsoft had to slash prices and write down the value of its unsold Surface tablets, and it stopped making the RT version in 2015.
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from Washington.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+This time Microsoft will offer an enterprise edition so corporations can manage the tablets and laptops and weave them into information technology infrastructure the same way they do with Intel-based machines. Microsoft’s previous effort targeted consumers. The new focus on business customers and the addition of more compatible applications mean this time Microsoft is more likely to succeed, said Matt Barlow, a Windows vice president."Things are materially different than they were even a few years ago," he said.At the conference in Shenzhen, the software maker also said it will request Chinese permission to sell its HoloLens augmented reality goggles in that country. Microsoft expects to get the OK and begin selling the devices in the first half of 2017. The company began selling its Xbox console there two years ago, ending a lengthy ban on game consoles in the world’s most populous country.Microsoft is still leaning heavily on Intel for many parts of its Windows plans. The two companies are working on computers that take advantage of artificial intelligence and Microsoft’s Cortana voice-controlled search agent. As part of the collaboration, called Project Evo, the two companies will work on programs like adding far-field speech communication to devices so users can ask Cortana questions or request it play music from across the room -- features popularized by Amazon.com Inc.’s hit Echo voice-activated home devices.

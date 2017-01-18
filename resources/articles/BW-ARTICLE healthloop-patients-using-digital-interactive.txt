@@ -1,0 +1,12 @@
+MOUNTAIN VIEW, Calif.--(BUSINESS WIRE)--
+In a study released this week, 2,226 patients undergoing diagnostic imaging were asked a variety of questions to determine their knowledge and understanding of ionizing radiation treatment.
+Educational information about diagnostic imaging was provided to three groups of patients; one received the information using a digital patient engagement platform (HealthLoop, Inc., Mountain View, CA), another used paper-based print-only materials, and the third received no specialized education.
+Researchers found that patients in the digital patient engagement platform group were significantly more likely to identify which types of imaging used ionizing radiation, significantly more likely to correctly identify which imaging modalities had the highest radiation doses, and significantly less concerned about undergoing imaging examinations that use ionizing radiation compared to patients who had received the same information in a print-only form. While only 21% of patients who had received printed materials correctly identified what ionizing radiation was, 66% of patients using the digital patient engagement education group did.
+The acceptability of this form of education was also high, with 86% of patients reporting that the digital platform was easy or very easy to use, and 84% saying that they were likely or very likely to use the platform again in the future.
+These findings are significant because as the use of diagnostic imaging increases, patient health literacy is becoming more important to drive productive shared decision making.
+Dr. Joseph Steele with The University of Texas MD Anderson Cancer Center presented the results of this study on Wednesday, November 30th, at the 102nd Annual Meeting of the Radiological Society of North America.
+About HealthLoop
+HealthLoop automates patient engagement to help health providers reduce cost, improve outcomes and deliver a 5-star patient experience. Reassuring guidance each step of the way connects care teams with patients who need it most. HealthLoop enables value-based care for hospitals to monitor at-risk populations, provide outreach when most needed and track patients through episodes of care. Located in Mountain View, CA, HealthLoop facilitates over 50,000 automated patient check-ins each month.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161201006524/en/
+ .bwalignc {text-align: center !important;} ;}

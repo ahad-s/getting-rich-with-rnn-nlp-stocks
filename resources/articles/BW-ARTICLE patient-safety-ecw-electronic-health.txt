@@ -1,0 +1,6 @@
+WESTBOROUGH, Mass.--(BUSINESS WIRE)--
+At eClinicalWorks, we are deeply committed to ensuring the safety of all patients whose health care providers rely on our software. For this reason, we have made a sustained effort to continuously improve our system and processes and to educate users on the proper use of our software to ensure patient safety. Even with these efforts, given our large base of users and the complexity inherent to all EHR systems, we periodically identify potential patient safety risks related to the use of our software. As part of our ongoing effort to respond to and minimize such risks, eCW is making this announcement to ensure that all participants in the healthcare process – clinicians, pharmacies, and patients and their family members or caregivers – are aware of key patient safety risks and are focused on the roles they can play in minimizing those risks.
+Ensuring the safety of patients requires collaboration and communication between individuals, their physicians, others involved in healthcare delivery, and EHR companies. With this in mind, we are issuing the following reminders:
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161206006450/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}

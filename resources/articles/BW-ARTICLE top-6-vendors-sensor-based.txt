@@ -1,0 +1,33 @@
+LONDON--(BUSINESS WIRE)--
+Technavio has announced the top six leading vendors in their recent global sensor-based gun systems market report. This research report also lists four other prominent vendors that are expected to impact the market during the forecast period.
+This Smart News Release features multimedia. View the full release here: http://www.businesswire.com/news/home/20161201005040/en/ 
+For over a decade, major defense spenders like the US, India, South Korea, and Israel have made an extensive investment in the development and procurement of advanced solutions, which can strengthen their land border security capabilities. The growing territorial disputes between countries have resulted in increased focus on maritime patrolling, and therefore, several defense ministries are obligating cost guards to upgrade the capabilities of the existing patrolling assets with sensor-based systems and weapons, which can intelligently track and neutralize unauthorized intrusions.
+Competitive vendor landscape
+The global sensor-based gun systems market is highly competitive, where vendors compete in terms of cost, product quality, reliability, and aftermarket service. With respect to the changing nature of defense requirements, vendors are required to provide cost-effective and high-quality sensor-based gun systems to the defense agencies, which can efficiently cater to the needs for securing borders or strategic infrastructures from illegal trespassing. Similarly, man-portable sensor-based gun providers should also offer products that reflect reliability and sturdiness.
+“The global sensor-based gun systems market is anticipated to witness collaboration with alliance partners, as well as substantial supports for the development of personalized guns from various government agencies, which are expected to drive the market during the forecast period,” says Avimanyu Basu, a lead defense analyst from Technavio.
+Government organizations, like the US DoD and the UK MoD, will serve as certification bodies, and they are expected to encourage the development of sensor-based guns and supplementary electronic components. As a result, vendors are expected to form strategic collaborations with the component suppliers to ensure an uninterrupted flow of manufacturing process.
+Request a sample report: http://www.technavio.com/request-a-sample?report=54728
+Technavio’s sample reports are free of charge and contain multiple sections of the report including the market size and forecast, drivers, challenges, trends, and more.
+Top six sensor-based gun systems market vendors
+Armatix
+The company’s Smart System is a concept incorporated for gun safety. The system consists of a radio-controlled watch that allows gun access and use. A gun with Smart System will only operate if it is within the range of the watch. The safety mechanism can be released via the radio-controlled watch, which is activated by a personal identification number (PIN) code. If the gun loses radio contact with the watch, it automatically gets deactivated.
+DoDaam Systems
+The company has been engaged in the development and supply of autonomous sentry guns since 2010 for addressing the security requirements of the Republic of Korea Armed Forces (South Korean Army). These guns integrate charge-coupled device (CCD) color cameras, forward-looking IR (FLIR) cameras, and sensor systems (thermal imaging and laser rangefinder). Owing to the advanced sensor technology, these guns are capable of operating in low light or even in complete darkness, as well as identifying human targets.
+Hanwha Techwin
+Within the defense sector, the company offers artillery systems, aircraft engine, and depot maintenance. The company along with three other institutions and Korea University developed a sentry gun called SGR-A1 in 2006.
+Rafael Advanced Defense Systems
+The company’s Sentry Tech system comprises of a line-up of remote controlled weapon stations, which are equipped with security and intelligence sensors. The system can be equipped with light weapons and anti-tank missiles to target and eliminate the enemies. Armed forces use Sentry Tech system to augment mission coordination and situational awareness by sending an alert on infiltration via ground and airborne sensors.
+Saab
+Saab's Trackfire remote weapon station (RWS) is a fully stabilized, remotely operated weapon and sensor system that can be used on all military platforms including vehicles, vessels, and static emplacements. The system can be integrated with additional enhancements such as smoke grenade launchers, appliqué armor, and battlefield management systems.
+TrackingPoint
+The company offers PGF systems and accurate shooting systems for long-range shooters in the military, special weapons, and tactics (SWAT) teams, and law enforcement bodies. These systems are integrated with a comprehensive array of sensors, including laser rangefinder, wireless connectivity, and voice recognition sensors.
+Browse Related Reports:
+Do you need a report on a market in a specific geographical cluster or country but can’t find what you’re looking for? Don’t worry, Technavio also takes client requests. Please contact enquiry@technavio.com with your requirements and our analysts will be happy to create a customized report just for you.
+About Technavio
+Technavio is a leading global technology research and advisory company. The company develops over 2000 pieces of research every year, covering more than 500 technologies across 80 countries. Technavio has about 300 analysts globally who specialize in customized consulting and business research assignments across the latest leading edge technologies.
+Technavio analysts employ primary as well as secondary research techniques to ascertain the size and vendor landscape in a range of markets. Analysts obtain information using a combination of bottom-up and top-down approaches, besides using in-house market modeling tools and proprietary databases. They corroborate this data with the data obtained from various market participants and stakeholders across the value chain, including vendors, service providers, distributors, re-sellers, and end-users.
+If you are interested in more information, please contact our media team at media@technavio.com.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161201005040/en/
+MULTIMEDIA AVAILABLE:http://www.businesswire.com/news/home/20161201005040/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}

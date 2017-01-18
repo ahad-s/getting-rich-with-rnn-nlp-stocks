@@ -1,0 +1,13 @@
+TOKYO--(BUSINESS WIRE)--
+Today GOTrust Technology Inc. (GO-Trust) announced the immediate availability of the GO-Trust Authenticator. This is a whole new approach for securely logging into Windows or MAC and then into Cloud Services. The User’s iPhone or Android phone communicates with the work computer and once the User’s identity has been confirmed via the ‘one touch’ fingerprint sensor or the ‘one click’ camera for facial recognition, a secure dialogue logs into Windows or MAC with the equivalent of a long and complex password. There is nothing for the User to remember other than to bring his phone to the office. The GO-Trust Authenticator also works with Microsoft Office 365, G Suite by Google, Salesforce, Box and many others. The authentication mechanism supports both PKI and FIDO UAF. The GO-Trust Authenticator can also be used, with the same simplicity “One Touch” to sign/encrypt e-mails and office documents.
+This Smart News Release features multimedia. View the full release here: http://www.businesswire.com/news/home/20161207005504/en/ 
+When corporate security policy requires passwords to be changed, this is achieved by a single click on the computer which requests the phone to generate a new complex password that is communicated and securely stored in a protected area; there is nothing for the User to remember. The GO-Trust Authenticator is the perfect business stress-free solution for logging onto all systems and services; as user friendly as it gets and as secure as a bank vault.
+Please download “GO-Trust Authenticator” from Google Play or Apple APP Store to experience passwordless login to all your computers.
+About GO-Trust
+GOTrust Technology Inc. (GO-Trust®) is the innovator of the secure microSD and the first company to deliver mobile credit cards, mobile banking, US PIV mobilization and voice & text encryption using the microSD form factor. GO-Trust® continues its world-leading ‘NoPassword Authentication Platform’ innovation to make login simpler and more secure from computer to cloud. The company’s latest products include FIDO UAF server, client and ASM, Bluetooth NFC smart card and the GO-Trust Authenticator. GO-Trust® has eighteen international patents.
+Note to Editors
+Demonstrations of the GO-Trust Authenticator: https://youtu.be/9tYpKBT2Y6k during the FIDO Tokyo seminar 2016 on December 8th.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161207005504/en/
+MULTIMEDIA AVAILABLE:http://www.businesswire.com/news/home/20161207005504/en/
+ .bwalignc {text-align: center !important;} ;}

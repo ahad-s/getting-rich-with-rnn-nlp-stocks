@@ -1,0 +1,25 @@
+LONDON--(BUSINESS WIRE)--
+Technavio analysts forecast the global automotive battery aftermarket to grow at a CAGR of close to 6% during the forecast period, according to their latest report.
+This Smart News Release features multimedia. View the full release here: http://www.businesswire.com/news/home/20161201005024/en/ 
+The research study covers the present scenario and growth prospects of the global automotive battery aftermarket for 2016-2020. calculate the market size, the report considers the sales figures of the different vehicles segment such as passenger cars, LCVs, and M&HCVs.
+According to Praveen Kumar, a lead analyst for automotive electronics at Technavio, “The demand for replacement of parts and accessories is strengthening the growth of the aftermarket for automotive batteries. Much of the volume of the automotive battery aftermarket comes from APAC followed by Europe and then the Americas.”
+Request a sample report: http://www.technavio.com/request-a-sample?report=54729
+Technavio’s sample reports are free of charge and contain multiple sections of the report including the market size and forecast, drivers, challenges, trends, and more.
+Technavio automotive analysts highlight the following three factors that are contributing to the growth of the global automotive battery aftermarket:
+Multiple limitations and short life cycle of lead-acid batteries
+The first rechargeable batteries for commercial use were lead acid batteries. Lead acid batteries continue to be widely used since they are dependable in terms of performance and price on cost-per-watt basis. However, lead acid batteries have low energy density, and they cannot be stored in a discharged condition since the cell voltage should not drop below 2.10V. The lead content and electrolyte make the battery environmentally unfriendly, and there is also the probability of thermal runaway if improperly charged. All these limitations often lead to premature failure of lead acid batteries.
+Growing traffic congestion in cities
+In recent times, all major economies are facing the challenge of increased traffic congestion Although, this is an inescapable condition in all urban and metropolitan areas across the world, the problem is particularly acute in APAC and Europe. The reason for increased traffic congestion in these areas is the rapid increase in the number of vehicles owing to urbanization and rise in the average middle class household income. Increased traffic congestion drains out batteries leading to shorter lifespans giving rise frequent replacement of batteries, resulting in a year-on-year growth for battery aftermarket.
+Increase in use of electrical accessories in cars
+With the continuous technological advancement in the automotive world, there has been an increasing trend in installing more and more electrical accessories in vehicles, generating the requirement for powerful batteries to operate them. An increase in the use of electrical accessories leads to an amplified load on the battery. At times, some of the electrical components are left on, while the engine is off, this unwittingly impacts the life of the battery.
+Electrification makes it possible to reduce the load on the engine by taking out the ancillary system, however, this increases the load on the battery. “Although, the power drawn from the battery to crank the engine has significantly gone down, the use of electrical components has increased the power drawn from the battery, says Praveen.”
+Browse Related Reports:
+Do you need a report on a market in a specific geographical cluster or country but can’t find what you’re looking for? Don’t worry, Technavio also takes client requests. Please contact enquiry@technavio.com with your requirements and our analysts will be happy to create a customized report just for you.
+About Technavio
+Technavio is a leading global technology research and advisory company. The company develops over 2000 pieces of research every year, covering more than 500 technologies across 80 countries. Technavio has about 300 analysts globally who specialize in customized consulting and business research assignments across the latest leading edge technologies.
+Technavio analysts employ primary as well as secondary research techniques to ascertain the size and vendor landscape in a range of markets. Analysts obtain information using a combination of bottom-up and top-down approaches, besides using in-house market modeling tools and proprietary databases. They corroborate this data with the data obtained from various market participants and stakeholders across the value chain, including vendors, service providers, distributors, re-sellers, and end-users.
+If you are interested in more information, please contact our media team at media@technavio.com.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161201005024/en/
+MULTIMEDIA AVAILABLE:http://www.businesswire.com/news/home/20161201005024/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}

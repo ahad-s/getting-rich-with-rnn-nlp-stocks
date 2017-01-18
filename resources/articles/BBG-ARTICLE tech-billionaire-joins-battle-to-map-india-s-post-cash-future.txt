@@ -1,0 +1,83 @@
+Nandan NilekaniFaced with chaos after eliminating India’s highest value rupee notes, Prime Minister Narendra Modi has roped in a billionaire from the ranks of his adversaries to help.Nandan Nilekani, a high-profile member of the opposition Indian National Congress party, has joined a committee to map a path to digital payments. India is trying to end its reliance on cash, especially in rural areas where almost every transaction is done in hard currency. It’s not the first time the former head of outsourcing giant Infosys Ltd. has tackled a national project -- he spearheaded the country’s biometrics-based Aadhaar unique identity program.Designed to eliminate corruption, Modi outlawed existing 500 rupee ($7.40) and 1,000 rupee notes on Nov. 8, which wiped out more than four-fifths of the nation’s currency and caused pain for millions, from street hawkers in the south to diamond cutters in the west. The government is trying a Plan B to salvage a situation that Credit Suisse Group AG and Deutsche Bank AG estimate will slow expansion by about 1 percentage point in the year through March.
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from Washington.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+Nilekani and his 13-person committee are meeting to work out how to get more Indians to adopt digital payments, via everything from their own smartphones to point-of-sale machines in local villages. While the nation has already rolled out its United Payments Interface, with hundreds of millions lacking phones or web access, a multipronged approach is needed to wean the nation of its dependence on cash.“India has the underlying digital financial architecture in place to get this going,” Nilekani said in an interview after the committee’s first meeting. “How quickly the government can reach everyone is a question of execution and speed.”As presses run all day to crank out new 500 and 2,000 rupee notes, the committee featuring chief ministers of prominent Indian states as well as the India head of Boston Consulting Group met for the first time last week.As startups like Paytm, MobiKwik and Freecharge push their digital wallets to a slice of smartphone users, the committee is focusing on two key avenues: getting more merchants to accept the United Payments Interface and procuring more point-of-sale devices.The interface, rolled out by major banks in April, makes transferring money as easy as sending a text message. With the system already in place, Nilekani says boosting acceptance of the payments interface is achievable in weeks. Getting the estimated one million new POS devices, which would almost double the number in use as of August, would take longer because of the need for a tender.“Breaking down the problem into digestible chunks is the first step to solving it,” said Nilekani, who lost a battle for a parliamentary seat in the 2014 election to a key member of Modi’s cabinet.India has also made it easier to make digital payments, with the central bank this week doing away with the two-step authentication process for transactions of less than 2,000 rupees.The impact of the money ban, known as demonetization, has been felt the most in the countryside, where cash is preferred for everything from buying clothes and selling produce to paying for weddings. The lack of cash notes has slammed the brakes on business in some areas.“There is no economic activity, transactions are at a standstill,” said Srikanth Nadhamuni, chief executive officer of incubator Khosla Labs which has funded electronic payments startup Novopay. The startup has 40,000 microATMs – no more than a smartphone with a fingerprint scanner attached and sometimes a printer - at small street-corner retail outlets called kirana stores.The committee is expected to meet again this week to look at how to approach those with limited access to technology. While India has 250 million smartphone users, there are about 350 million who only have feature phones while another 350 million don’t have a phone at all, Nilekani said.For feature phone users, the committee recommends India’s existing retail e-payments app be adapted to technology that could be rolled out within weeks. That will be helped by lower charges, with the telecommunications regulator slashing the charges for transactions from 1.50 rupees to 0.50 rupees.“Each category has to have a different strategy” said Nilekani.Before demonetization, digital payments had already been projected to surge. Google and Boston Consulting Group projected India’s digital payments industry to grow to $500 billion and cover half the population only by 2020.A financial inclusion panel hosted earlier this year by the country’s software products think tank, iSpirt laid out a four-year plan to go cashless.“It is a big target for four years but government support can shorten the time,” said Sharad Sharma, co-founder of iSpirt and a member of the government-appointed committee. “While it cannot happen in the next few months, it will happen within this decade.”The real challenge is the 350 million people w‘ithout phones, many of whom are economically-challenged. The plan is to draw those enrolled in Aadhaar, and quickly enlist the remaining, toward microATMs promoted by large Indian lenders such as IDFC Bank and startups like Novopay which already have a presence in 130,000 village retail outlets or kirana stores.“There is a sense of urgency,” said Nilekani. “All the strategies have to be deployed at the same time to aim for universal coverage.”

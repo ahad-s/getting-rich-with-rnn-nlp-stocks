@@ -1,0 +1,10 @@
+FRANKFURT, Germany--(BUSINESS WIRE)--
+MV Index Solutions (MVIS) today announced the November performance of its six investable Long/Short Equity Indices. Each index is constructed using transparent, liquid ETFs and US Treasury securities to produce hedge fund-style returns without hedge fund pricing, opaqueness and redemption restrictions.
+With a history stretching back to 2003, the MVIS Long/Short Equity Indices use a patented methodology in seeking to capture the beta returns of universes of statistically similar hedge funds that exhibit in aggregate consistently high concentrations of beta. MVIS currently offers four regional and two global long/short equity strategies.
+The table below shows the performance of the indices for November 2016 and for selected periods:
+Detailed information about MVIS Long/Short Equity Indices including methodology details and index data is available on www.mvis-indices.com.
+Note to Editors:
+MV Index Solutions (MVIS) develops, monitors and licenses the MVIS Indices, a selection of focused, investable and diversified benchmark indices which are especially designed to underlie financial products. MVIS Indices cover several asset classes, including hard assets and international equity markets as well as fixed income markets. Approximately USD 12 billion in assets under management are currently invested in financial products based on MVIS Indices. MVIS is a VanEck company.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161201005879/en/
+ .bwalignc {text-align: center !important;} .bwalignl {text-align: left !important;} .bwcellpmargin {margin-bottom: 0px !important; margin-top: 0px !important;} .bwnowrap {white-space: nowrap !important;} .bwpadl0 {padding-left: 0.0px !important;} .bwpadr0 {padding-right: 0.0px !important;} .bwsinglebottom {border-bottom-color: black !important; border-bottom-style: solid !important; border-bottom-width: 1.0pt !important;} .bwtablemarginb {margin-bottom: 10.0px !important;} .bwvertalignb {vertical-align: bottom !important;} .bwvertalignm {vertical-align: middle !important;} .bwvertalignt {vertical-align: top !important;} ;}

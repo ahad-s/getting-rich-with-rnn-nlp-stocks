@@ -1,0 +1,19 @@
+DUBLIN--(BUSINESS WIRE)--
+Research and Markets has announced the addition of the "Global Encryption Software Market (2016-2022)" report to their offering.
+Encryption can be software-based or hard-ware based, and it is dependent on the organizations' security needs and their IT budgets. Software-based encryption is carried out with the help of software to encrypt and decrypt data stored in the files/folders, hard drives, removable media, data travelling over the internet network through emails, etc. Encryption software use specific algorithms to convert data into a meaningless cipher text or encrypted text, which can only be converted to meaningful text using key, symmetric key (single key) or asymmetric key (pair of keys).
+Different encryption algorithms are available for symmetric and asymmetric keys. The most widely used algorithms under symmetric key are Advanced Encryption Standard (AES), Data Encryption Standard (DES) and Triple-DES, and Blowfish. Similarly for asymmetric key, the most commonly used algorithm is RSA. Regulatory frame work set by the governments about data privacy and compliance demands tighter security measures. With stringent regulations, the need for effective data security technologies is vital.
+While developed geographies such as America and Europe already have federal level regulations that require mandatory compliance with data privacy laws; however, developing regions such as APAC and LAMEA, are in the process of implementing more concrete data protection legislations.
+Companies Mentioned:
+Key Topics Covered:
+1. Market Scope & Methodology
+2. Executive Summary
+3. Market Overview
+4. Global Encryption Software Market by Application
+5. Global Encryption Software Market by Organization Size
+6. Global Encryption Software Market by Deployment Type
+7. Global Encryption Software Market by Vertical
+8. Global Encryption Software Market by Region
+9. Company Profiles
+For more information about this report visit http://www.researchandmarkets.com/research/q6sv6j/global_encryption
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161207006296/en/

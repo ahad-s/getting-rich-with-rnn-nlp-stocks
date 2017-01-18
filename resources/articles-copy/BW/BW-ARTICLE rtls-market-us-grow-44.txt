@@ -1,0 +1,28 @@
+DUBLIN--(BUSINESS WIRE)--
+Research and Markets has announced the addition of the "RTLS Market in the US 2016-2020" report to their offering.
+The report forecasts the RTLS market in the US to grow at a CAGR of 44.51% during the period 2016-2020.
+RTLS is the technology used to find, track, manage, and identify the geographical position of a target on a real-time basis with the help of nodes or tags and readers. Nodes or tags are embedded in smartphones or navigational devices through which a user can easily track an object. A reader is used to receive wireless signals from the tags through which an object can be located. RTLS works on technologies like GPS, ultra-wideband (UWB), Bluetooth, Wi-Fi, and RFID to track the location of objects.
+The report has been prepared based on an in-depth market analysis with inputs from industry experts. The report covers the market landscape and its growth prospects over the coming years. The report also includes a discussion of the key vendors operating in this market.
+According to the report, RTLS tags are primarily used in the retail, healthcare, transportation and logistics, and chemical industry for asset tracking. Currently, most of the firms are using RTLS to track assets. It helps them increase efficiency and reduce costs. Cellular networks and satellites are often being used for asset tracking on a real-time basis in outdoor environments.
+Key vendors:
+Key Topics Covered:
+Part 01: Executive summary
+Part 02: Scope of the report
+Part 03: Market research methodology
+Part 04: Introduction
+Part 05: Market landscape
+Part 06: Five forces analysis
+Part 07: Market segmentation by solution
+Part 08: Market segmentation by technology
+Part 09: Market segmentation by application
+Part 10: Market drivers
+Part 11: Impact of drivers
+Part 12: Market challenges
+Part 13: Impact of drivers and challenges
+Part 14: Market trends
+Part 15: Vendor landscape
+Part 16: Key vendor analysis
+Part 17: Appendix
+For more information about this report visit http://www.researchandmarkets.com/research/pjwwhp/rtls_market_in
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161206005966/en/

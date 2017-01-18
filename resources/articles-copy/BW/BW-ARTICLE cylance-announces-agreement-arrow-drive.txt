@@ -1,0 +1,14 @@
+SYDNEY--(BUSINESS WIRE)--
+Cylance® Inc., the company that is revolutionising cybersecurity with the practical application of artificial intelligence to prevent the most advanced cyber threats, today announced that it has selected Arrow Electronics, Inc. as its distributor in Australia and New Zealand (ANZ).
+This year, Cylance announced its initial launch into Australia to service market growth across Asia Pacific. Arrow will support Cylance in expanding its regional footprint and providing customers with cyberattack prevention technology where traditional anti-virus software has failed.
+According to Andy Solterbeck, vice president of Cylance Asia Pacific, Arrow was selected because of its extensive security experience and credentials in the local region.
+“We are excited to work with Arrow as a distributor that is recognised for its proven track record of releasing highly disruptive technologies into the Australia and New Zealand markets. We look forward to leveraging Arrow’s infrastructure and reseller programs to scale the business and enable our customers to upskill quickly,” said Solterbeck.
+Cylance has pioneered the use of artificial intelligence and machine learning to identify and block cyber threats at the endpoint. The company now protects over three million endpoints worldwide including mid-market to large enterprises and government agencies in ANZ.
+The agreement will take effect on 1 December 2016.
+In November, Cylance appointed ANZ Channel Manager Lani Edwards to bolster the company’s regional channel strategy.
+About Cylance® Inc.
+Cylance is the first company to apply artificial intelligence, algorithmic science and machine learning to cybersecurity to prevent the most advanced security threats in the world. Using a breakthrough predictive analysis process, CylancePROTECT® quickly and accurately identifies what is benign and what is a threat, and prevents malicious code from ever executing on a targeted system. By coupling advanced machine learning and artificial intelligence with a unique understanding of an attacker’s mentality, Cylance provides technology and services that are truly predictive and preventive against the most advanced threats. For more information visit: www.cylance.com.
+Cylance and CylancePROTECT are registered trademarks or trademarks owned by Cylance Inc. in the United States and other jurisdictions and may not be used without prior written permission. All other trademarks are the property of their respective owners.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161130006371/en/
+ .bwalignc {text-align: center !important;} ;}

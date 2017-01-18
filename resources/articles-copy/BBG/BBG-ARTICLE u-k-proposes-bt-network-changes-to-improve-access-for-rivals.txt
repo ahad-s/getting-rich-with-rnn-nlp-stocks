@@ -1,0 +1,83 @@
+The U.K.’s communications regulator, seeking to spur a roll-out of fiber broadband to homes and businesses, is proposing changes to BT Group Plc’s network to ease access for competitors.Ofcom outlined plans to give BT’s rivals looking to install fiber directly to buildings simpler, cheaper access to the former monopoly’s Openreach network, including the poles and underground tunnels that carry broadband cables. Sky Plc, TalkTalk Telecom Group Plc and Vodafone Group Plc are among companies that rely on Openreach to sell broadband to consumers.Ofcom wants to close a gap between the U.K. and some continental European countries in fiber deployment. The regulator last week advanced plans to legally separate Openreach from BT, stopping short of the full breakup demanded by rivals. That followed a government funding commitment of more than 1 billion pounds ($1.27 billion) to boost broadband, putting pressure on BT’s cable-focused upgrade plans by emphasizing the fiber that its competitors favor.“Fiber is the future for broadband, and Ofcom is helping to deliver that through competition between networks,” Yih-Choung Teh, competition policy director at the regulator, said in a statement Tuesday. “Our plans will give providers increased confidence to invest in their own full-fiber networks at reduced cost.”
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from Washington.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+The comment period closes at the end of January. The changes proposed by the regulator include altering BT’s cost recovery for third-party access such as making repairs to ducts, so that it happens in the same way BT recoups spending for its own deployments, by spreading costs across all services using the duct. Ofcom said it’s weighing changes to Openreach’s rental charges for accessing the network, including a possible cap.The regulator wants faster access for BT’s rivals for site surveys and is considering service-level agreements or guarantees when Openreach must do the work, or allow competitors to do the work themselves. It’s also considering whether to require Openreach to upgrade drop wires with fiber at the request of any telecommunications provider offering full-fiber broadband to a customer.As some other EU countries turn to fiber to speed up broadband connections, BT is relying on a cheaper solution that squeezes more out of its existing copper lines. The U.K. lags most other European Union countries in deploying fiber access all the way to people’s homes. Ofcom and the government are working on plans to give everyone the right to request service of 10 megabits per second by 2020.

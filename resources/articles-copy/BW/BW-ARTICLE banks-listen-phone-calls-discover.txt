@@ -1,0 +1,24 @@
+It’s not what you say, but how you say it. Especially if you want to get hired as a trader.
+London-based Amplify Trading Ltd. , which provides training services to banks and asset managers including HSBC Holdings Plc and Invesco Ltd., is introducing voice analysis technology aimed at identifying behavior associated with a successful career as a trader.
+How traders interact, and what they say, has continued to make headlines. European Union antitrust regulators fined a trio of banks 485.5 million euros ($524 million) Wednesday, citing "vulgar language" used by traders during their alleged interactions. 
+More from Bloomberg.com: Boeing Sweats Under Trump Spotlight as SoftBank Feels Warmth
+As part of Amplify’s eight-week program, trainees are split into two groups, sales traders and fund managers. Calls between the two groups are then analyzed to measure individual characteristics. On top of simple metrics such as call length versus commission made, speech analysis software will consider tone of voice to identify whether, for example, a trader is often agitated or frustrated.
+Banks with access to the resulting data pool are subsequently able to pick traders with specific characteristics.
+Thanks to the spread of electronic trading, the number of traders who still pick up the phone to talk to clients is falling . Amplify, however, sees the shift from voice to electronic trading as an opportunity for talented individuals to stand out.
+More from Bloomberg.com: Dear Mr. Trump, About Those U.S. IPhones
+“As more of the small value trading processes become automated, the value of the sales trader that can maintain a client relationship to win large block trades increases proportionately,” says Will de Lucy, Amplify’s managing director and co-founder.
+Such focus on traders’ personal characteristics follows a Cambridge University study earlier this year arguing that “signals from the body -- the gut feelings of financial lore” still have a significant impact on success rates. Interoceptive traders, defined in the study as those able to detect their own heartbeats, were shown to be more profitable on the trading floor.
+More from Bloomberg.com: Air Force One Costs Billions of Dollars Because It’s a Flying White House
+Amplify’s methods are a departure from the traditional tools used by the financial industry, such as numerical and verbal reasoning tests, to grade potential hires.
+"There is not one type of personality that makes a more successful trader,” says Steven Goldstein, whose company Alpha R Cubed Ltd. generates behavioral profiles of traders through psychometric testing.
+Goldstein, who also lectures in behavioral finance at The London School of Economics, says managers tend to choose people that fit their own specific risk strategy. “You often see previously successful traders struggle after changing companies. This is simply because their behavioral profiles don’t match that of their new firm,” the former Credit Suisse Group AG and Commerzbank AG trader says.
+Goldstein does acknowledge that a trader’s personal characteristics can identify which market they are more suited to. Unemotional, logically-minded traders are more likely to have success in portfolio management or running long-term derivatives books, whereas risk-averse, excitable people are more suited to spot markets like foreign exchange, he says.
+Psychometric testing is a “proven” indicator of future performance, says HSBC’s Parul Shukla, who uses Amplify’s services to train graduate traders on the bank’s Global Markets program.
+But given the many high-profile legal cases seen in recent years, banks are now extending the use of behavioral profiling to identify potential compliance breakers.
+“In addition to trading ability and soft skills like relationship management, we now attempt to measure honesty and integrity,” says Shukla.
+Amplify say its voice analysis techniques will help banks identify the recruits most prone to mishaps and sharp practice.
+“Simulation candidates very often make mistakes, by for example, quoting bids and offers incorrectly,” said De Lucy. “We record which candidates take advantage of these mistakes and which do the right thing and ask for re-quotes.”
+The software also flags language that could indicate a break of compliance protocol. Traders persistently using words like “guarantee” could reflect a trader who often commits to outcomes that the firm can’t be sure of, De Lucy said.
+Despite the financial crisis erupting almost a decade ago, De Lucy is banking on the behavior of traders remaining in the spotlight.
+More from Bloomberg.com
+Read Banks Listen in on Phone Calls to Discover the Best Traders on bloomberg.com

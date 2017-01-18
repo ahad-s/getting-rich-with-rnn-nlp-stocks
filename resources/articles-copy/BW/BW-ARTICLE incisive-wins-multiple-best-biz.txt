@@ -1,0 +1,14 @@
+SAN JOSE, Calif.--(BUSINESS WIRE)--
+For the fourth year in a row, Incisive’s Concourse solution has been named a winner in the Best New Version of the Year category. Incisive’s Vice President of Engineering, Dave Myers, and Principal Engineer, Tuan Tran, accepted the Silver Award in the Technology Department of the Year category for their work to address spreadsheet risk intelligence.
+“Dave and Tuan have worked tirelessly to build the Incisive product suite. In doing so, they have filled a serious void within the industry, the ability to detect and manage spreadsheet risk. By expanding the capabilities of the Xcellerator product, they have made it significantly easier to detect spreadsheet risk and fraud,” said Diane Robinette, president and CEO of Incisive. “It is an honor to know their efforts and continued commitment to building upon the capabilities of Incisive’s spreadsheet risk intelligence technology are acknowledged by others in the industry.”
+Concourse - Best New Version of the Year New
+In February 2016 Incisive Software Corporation broke spreadsheet management barriers with the launch of the Concourse API. In doing so, the company now enables seamless monitoring of spreadsheets within any Enterprise Content Management (ECM) and file sharing systems including SharePoint, Documentum, One Drive, Google Drive, and Box.
+Because the API sits behind the scenes, it is invisible to users. Meanwhile, changes and revisions are tracked, providing enterprises greater transparency and governance over spreadsheets, avoiding costly errors and unwanted headlines.
+To learn more about Incisive’s risk intelligence technology please visit: www.incisive.com/overview
+About Best in Biz Awards
+Best in Biz Awards recognizes companies for their business success as judged by established members of the press and industry analysts. Best in Biz Awards honors are currently conferred in two separate programs: North America and International, and in more than 60 categories, including company, team, executive, product and PR and media. For more information, visit: http://www.bestinbizawards.com.
+About Incisive
+Incisive provides award-winning and innovative spreadsheet risk intelligence solutions. Our enterprise-class offerings provide visibility and control to all business areas that use or interact with spreadsheets. Incisive products have been recognized for accurately and reliably identifying risks to give users confidence in their spreadsheet information. For more information about Incisive and the company’s solutions, visit www.incisive.com.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161206005335/en/
+ .bwalignc {text-align: center !important;} ;}

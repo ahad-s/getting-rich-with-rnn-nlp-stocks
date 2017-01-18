@@ -1,0 +1,25 @@
+DUBLIN--(BUSINESS WIRE)--
+Research and Markets has announced the addition of the "Mobile Device Management Market by Solution (Device Management, Application Management, Security Management, and Network Service Management), Service, Deployment Type, Vertical, and Region - Global Forecast to 2021" report to their offering.
+"Increasing smartphone and tablet penetration, strong adoption of BYOD policies, and growing security concerns regarding corporate data is expected to drive the overall market"
+The Mobile Device Management (MDM) market size is estimated to grow from USD 1.69 billion in 2016 to USD 5.32 billion by 2021, at a Compound Annual Growth Rate (CAGR) of 25.8% due to increasing smartphone and tablet penetration, strong adoption of BYOD policies, and growing security concerns to protect corporate data.
+In addition, MDM's capability to manage and synchronize different OS platform devices through a single console has led to an increasing demand for MDM services and solutions. However, factors such as reluctance to implement MDM solution on the employees' personal phones due to privacy constraints and low adoption of MDM solutions by Small and Medium Enterprises (SMEs) because of budgetary constraints are the major restraints in the overall growth of the market.
+In 2016, the application management segment is expected to dominate among MDM solutions. With the growing number of mobile apps, this solution provides granular controls to the administrators in an organization which ultimately helps them in managing and securing the app data.
+North America is expected to hold the largest market share of the MDM market in 2016 due to the increased mobile workforce, increased smartphones penetration, BYOD trend, and higher cloud-based deployment of MDM solutions in the region. APAC is estimated to grow at the highest rate during the forecast period as the organizations in this region are looking to adopt enterprise mobility solutions to meet the demands of the dynamic mobile workforce.
+Key Topics Covered:
+1 Introduction
+2 Research Methodology
+3 Executive Summary
+4 Premium Insights
+5 Market Overview
+6 Industry Trends
+7 Mobile Device Management Market Analysis, By Type
+8 Mobile Device Management Market Analysis, By Deployment Type
+9 Mobile Device Management Market Analysis, By Vertical
+10 Geographic Analysis
+11 Competitive Landscape
+12 Company Profiles
+13 Key Innovators
+Companies Featured
+For more information about this report visit http://www.researchandmarkets.com/research/jggqv4/mobile_device
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161201006089/en/

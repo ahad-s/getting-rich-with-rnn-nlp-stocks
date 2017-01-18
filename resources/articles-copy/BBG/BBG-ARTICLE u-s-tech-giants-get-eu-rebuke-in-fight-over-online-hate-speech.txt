@@ -1,0 +1,83 @@
+U.S. Internet giants Facebook Inc., Twitter Inc., Google and Microsoft Corp. were rebuked by the European Union’s executive arm for failing to meet their pledge to tackle online hate speech in less than 24 hours.It’s been more than six months since the companies agreed to apply a code of conduct, but only 40 percent of all notifications of alleged illegal online hate speech are currently reviewed under 24 hours, the European Commission said Tuesday as it presented its first evaluation in a report.
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from Washington.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+“The last weeks and months have shown that social media companies need to live up to their important role and take up their share of responsibility when it comes to phenomena like online radicalization, illegal hate speech or fake news,” EU Justice Commissioner Vera Jourova said in a statement. “While IT companies are moving in the right direction, the first results show that the IT companies will need to do more to make it a success.”The code of conduct by the social media companies, made on May 31, came when Europe was trying to come to terms with the bloody attacks in Paris and Brussels by Islamic State, which has used the Web and social media to spread its message of hate against its enemies. The companies said back then that it remains a “challenge” to strike the right balance between freedom of expression and hate speech in the self-generated content on online platforms. They didn’t immediately respond to a request for comment on the EU report.Facebook, Microsoft, Twitter and YouTube separately said Monday they are creating a shared database of the most severe terrorist videos and images that they have removed from their sites. The database, which will be hosted by Facebook, will store "hashes" -- a kind of unique digital fingerprint created by a cryptographic algorithm -- for each piece of content.The results of the EU’s first evaluation are based on analysis by 12 non-governmental organizations in nine European countries to see how the companies responded to notifications over a period of six weeks, the commission said.“The findings indicate that among the 600 notifications made in total, 28 percent lead to a removal, 40 percent of all responses were received within 24 hours while another 43 percent arrived after 48 hours,” the commission said.

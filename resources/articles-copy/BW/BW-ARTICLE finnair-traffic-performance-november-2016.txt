@@ -1,0 +1,28 @@
+HELSINKI--(BUSINESS WIRE)--
+Regulatory News:
+Finnair OYJ (HEX:FIA1S)
+Number of passengers grew 2.2% year-on-year
+In November, Finnair's overall capacity measured in Available Seat Kilometres grew by 1.7 per cent, and traffic measured in Revenue Passenger Kilometres grew by 1.5 per cent year‐on‐year. The passenger load factor declined by 0.2 percentage points to 76.0 per cent.
+The capacity in Finnair’s largest traffic area, Asia, grew by 2.3 per cent in November, and traffic grew slightly more, by 3.9 per cent on the back of higher passenger load factor. The new Fukuoka and Guangzhou routes were retired in October for the winter season. Hence the November destination range was the same as in the comparison period, and the capacity growth was due to the additional capacity introduced by the A350s.
+The capacity in American traffic declined by 4.2 per cent year-on-year, and traffic measured in RPK decreased 10.3 per cent. The contraction in capacity was due to unforeseen aircraft overhaul, which forced the cancellation of four round trips on the New York route, which was being operated by temporarily leased aircraft and flight crew during the month.
+European traffic remained largely unchanged as capacity grew by 1.4 per cent and RPK declined by 0.3 per cent year-on-year. The domestic capacity increased by 6.2 per cent, and traffic increased by 6.6 per cent year‐on‐year reflecting mostly increased flying to Northern Finland.
+In November, the cargo capacity in scheduled traffic measured in Available Tonne Kilometres grew by 2.2 per cent, and Revenue Tonne Kilometres increased by 5.8 per cent year-on-year. In addition, Finnair’s total freight capacity included three weekly freighter flights between Helsinki and Brussels, operated by DHL.
+In November, 75.9 per cent of all Finnair flights arrived on schedule (92.1).
+Traffic statistics for December 2016 will be published on Tuesday, 10 January 2017.
+Finnair Traffic Performance November 2016
+* Operational calculatory capacity
+** Including purchased traffic
+– Change %: Change compared to the figures of the respective periods in the previous year (p = percentage points)
+– Available seat kilometres, ASK: Total number of seats available, multiplied by the number of kilometres flown
+– Revenue passenger kilometres, RPK: Number of revenue passengers carried, multiplied by kilometres flown
+– Passenger load factor: Share of revenue passenger kilometres of available seat kilometres
+– Available tonne kilometres, ATK: Number of tonnes of capacity for carriage of passengers, cargo and mail, multiplied by kilometres flown
+– Revenue tonne kilometres, RTK: Total revenue load consisting of passengers, cargo and mail, multiplied by kilometres flown
+– Overall load factor: Share of revenue tonne kilometres of available tonne kilometres
+Distribution:
+NASDAQ OMX Helsinki
+Principal media
+This information was brought to you by Cision http://news.cision.com
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161208006416/en/
+ .bwalignc {text-align: center !important;} .bwalignl {text-align: left !important;} .bwnowrap {white-space: nowrap !important;} .bwpadl0 {padding-left: 0.0px !important;} .bwpadr0 {padding-right: 0.0px !important;} .bwtablemarginb {margin-bottom: 10.0px !important;} .bwvertalignb {vertical-align: bottom !important;} .bwvertalignm {vertical-align: middle !important;} .bwvertalignt {vertical-align: top !important;} ;}

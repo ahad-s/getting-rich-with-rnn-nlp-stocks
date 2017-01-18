@@ -1,0 +1,11 @@
+Lattice Semiconductor Corporation (LSCC):
+Product demonstrations include:
+Meetings are by invitation only. To schedule a press meeting, please contact: Lattice@racepointglobal.com. To schedule a customer meeting, please visit: http://www.latticesemi.com/en/About/ContactUs.aspx.
+About Lattice Semiconductor
+Lattice Semiconductor (LSCC) provides smart connectivity solutions powered by our low power FPGA, video ASSP, 60 GHz millimeter wave, and IP products to the consumer, communications, industrial, computing, and automotive markets worldwide. Our unwavering commitment to our customers enables them to accelerate their innovation, creating an ever better and more connected world.
+For more information, visit www.latticesemi.com. You can also follow us via LinkedIn, Twitter, Facebook, YouTube or RSS.
+Lattice Semiconductor Corporation, Lattice Semiconductor (& design), ECP5, pASSP, CrossLink, MachXO3, HDMI, WirelessHD and specific product designations are either registered trademarks or trademarks of Lattice Semiconductor Corporation or its subsidiaries in the United States and/or other countries.
+GENERAL NOTICE: Other product names used in this publication are for identification purposes only and may be trademarks of their respective holders.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161206005061/en/
+ .bwalignc {text-align: center !important;} .bwalignl {text-align: left !important;} .bwcellpmargin {margin-bottom: 0px !important; margin-top: 0px !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} .bwpadl0 {padding-left: 0.0px !important;} .bwtablemarginb {margin-bottom: 10.0px !important;} .bwvertalignb {vertical-align: bottom !important;} .bwvertalignt {vertical-align: top !important;} ;}

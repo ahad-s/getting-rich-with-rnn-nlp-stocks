@@ -1,0 +1,16 @@
+PORTLAND, Ore.--(BUSINESS WIRE)--
+Tripwire, Inc., a leading global provider of security and compliance solutions for enterprises and industrial organizations, today announced the results of an extensive Tripwire study conducted by Dimensional Research. The study evaluated key challenges that organizations must address in order to optimize their cyber security and compliance programs. Study respondents included over 500 IT security professionals.
+According to Tripwire’s study, only one in four respondents said their organizations have the technology needed to effectively detect and respond to a serious data breach. In addition, 39 percent of respondents said that after statistics are collected it takes their security teams days or weeks to correlate the data and security alerts from their security tools.
+Despite growing IT budgets, many organizations still lack the resources, visibility and threat intelligence needed to rapidly and accurately respond to data breaches. The 2016 SANS Incident Response Survey found that 65 percent of its respondents see a skills shortage as an impediment to incident response efforts.
+“Opportunities for automation are key to maintaining operational effectiveness when organizations are faced with a skills shortage that won’t be alleviated quickly,” said Tim Erlin, senior director of IT security and risk strategy at Tripwire. “Using the tools at hand to prioritize alerts can save precious time in responding to an incident. Putting the right contextual data at the analyst’s fingertips can allow one person to simply get more done in a shorter period of time.”
+Additional findings from the survey included:
+Erlin continued: “Information sharing is a key defensive strategy for most companies. In order to protect an organization effectively, it’s incredibly valuable to know how other, similar organizations are being attacked or breached.”
+Additional Resources:
+Survey Results: Tripwire 2016 Security Challenges Survey
+Blog: Understanding Five Key Challenges to Security, Compliance, and IT Ops
+Blog: Data Breach Survivor
+About Tripwire
+Tripwire is a leading provider of security, compliance and IT operations solutions for enterprises, industrial organizations, service providers and government agencies. Tripwire solutions are based on high-fidelity asset visibility and deep endpoint intelligence combined with business context; together these solutions integrate and automate security and IT operations. Tripwire’s portfolio of enterprise-class solutions includes configuration and policy management, file integrity monitoring, vulnerability management, log management, and reporting and analytics. Learn more at tripwire.com, get security news, trends and insights at tripwire.com/blog or follow us on Twitter @TripwireInc.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161207005032/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}

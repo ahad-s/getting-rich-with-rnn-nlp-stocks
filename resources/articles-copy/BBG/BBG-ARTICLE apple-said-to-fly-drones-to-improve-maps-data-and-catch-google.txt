@@ -1,0 +1,83 @@
+Apple Inc. plans to use drones and new indoor navigation features to improve its Maps service and catch longtime leader Google, according to people familiar with the matter.The Cupertino, California-based company is assembling a team of robotics and data-collection experts that will use drones to capture and update map information faster than its existing fleet of camera-and-sensor ladened minivans, one of the people said. Apple wants to fly drones around to do things like examine street signs, track changes to roads and monitor if areas are under construction, the person said. The data collected would be sent to Apple teams that rapidly update the Maps app to provide fresh information to users, the person added.Apple is also developing new features for Maps, including views inside buildings and improvements to car navigation, another person familiar with the efforts said. The people asked not to be identified talking about private projects. An Apple spokeswoman declined to comment.Five years after Google Maps launched on the iPhone, Apple’s mapping app was introduced in 2012 with glaring errors like a grocery store marked as a hospital and an incorrect airport address. Apple lacked the technology needed to quickly suck in data from many different sources to evaluate and change the digital maps."There’s a huge data-quality issue there, and I don’t think we initially appreciated all the kinds of technology we would need to do that on an ongoing basis," Craig Federighi, Apple’s senior vice president of software engineering, told Fast Company earlier this year.Digital maps are crucial tools for Apple and Google to attract developers that build popular travel, ride-sharing, and retail apps and services that integrate with the companies’ mobile operating systems. Collecting accurate data is the most important part of digital map building and Apple’s latest moves could help it match the prodigious capabilities of Google in this field.Since Apple Maps launched, the company has improved the app by more quickly updating data, adding a mode for navigating public transit systems, improving search results, and opening the platform to outside services such as Uber ride-hailing and OpenTable restaurant reservations. The drone initiative is a continuation of this effort and is unlikely to be related to a commercial Apple drone product.
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from the campaign trail.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+Apple filed for an exemption on Sept. 21, 2015, from the Federal Aviation Administration to fly drones for commercial purposes, according to documents obtained by Bloomberg News. At that time, exemptions were required to commercially operate drones. In a response dated March 22, 2016, the FAA granted Apple approval to "operate an unmanned aircraft system to conduct data collection, photography, and videography," according to one of the documents.Apple’s application told the FAA that it would use a range of drones sold by companies such as SZ DJI Technology Co. and Aibotix GmbH to collect the data. Official guidelines for commercial drone operation were instated in August, restricting flying to mostly daytime hours and requiring licensed pilots to operate the equipment while keeping the drones in their line of sight. Apple committed to these guidelines, according to the FAA documents. The current rules restrict commercial drones from flying over people and buildings, potentially limiting Apple’s initiative for the time being. Apple could meanwhile fly the drones in the U.S. within FAA guidelines and fly without restriction in countries without commercial drone regulations. Apple has hired at least one person from Amazon.com Inc.’s Prime Air division to help run the drone team, one of the people said. Prime Air is Amazon’s initiative to quickly deliver packages via drones. The Apple team is being assembled in Seattle, the same city as Amazon’s headquarters, the person said.Beyond better data collection, Apple is developing an indoor mapping view that would allow users to navigate airports, and other high-traffic buildings like museums using iPhones, according to another person.Apple acquired startup Indoor.io last year to help bring its indoor mapping project to market, according to another person familiar with the matter. Apple confirmed the purchase, but declined to say why it did the deal. The company also bought WiFiSlam in 2013, another startup with indoor navigation expertise.Indoor location tracking is achieved via a combination of technologies inside the latest iPhones, including pressure sensors, GPS, Wi-Fi, and Bluetooth. Apple is also working on a feature that provides better guidance for changing lanes while driving, one of the people said. Both features are planned for release next year but could be held back, the person said.

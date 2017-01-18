@@ -1,0 +1,83 @@
+Hate doing laundry? Shin Sakane has a solution.The Japanese inventor received 6 billion yen ($53 million) from partners, including Panasonic Corp., last month to advance “the Laundroid” -- a robot Sakane is developing to not only wash and dry garments, but also sort, fold and neatly arrange them. The refrigerator-size device could eventually fill the roles of washing machine, dryer and clothes drawer in people’s homes.Shin SakaneSakane, whose earlier inventions include an anti-snoring device and golf clubs made of space materials, said the funding will bring closer his dream of liberating humanity from laundry. Among his inspirations for the project is the 1968 Stanley Kubrick sci-fi classic “2001: A Space Odyssey.” Laundroid was designed to resemble the mysterious objects in the film that brought technology to prehistoric humans, and the project was originally code-named “Monolith.”“That’s what we had in-mind: a technology that never existed on Earth descends from space,” the 45-year-old Sakane, head of Seven Dreamers Laboratories Inc., said in an interview at his Tokyo office. “If we could automate this, the act of doing laundry will be gone for good.”The funding round was one of the largest ever for a Japanese tech startup, according to CB Insights.It brings total capital raised to 7.5 billion yen. Nomura Holdings Inc. has been hired for an initial public offering in the “not too distant future,” Sakane said, adding that Seven Dreamers Laboratories is currently valued at about 20 billion yen.While the full product is slated for release in 2019, an early version that can only sort and fold clothing goes on sale worldwide in March.Sakane wouldn’t disclose details of how the robot works, but patents show that users are expected to dump clothes in a lower drawer. From there, robotic arms grab each item while scanners look for unique features such as buttons or a collar. Once identified, the clothes are folded using sliding plates and neatly stacked on upper shelves for collection.“We tried so many things and none of them worked,” Sakane said last week. “A ton of team members quit, saying it’s impossible or that I’m crazy. But the ones who remained came up with some truly brilliant ideas.”A prototype of the Laundroid.The goal is to eventually get the price of the full version to less than about 300,000 yen ($2,700), he said. The model going on sale in March will probably cost significantly more due to higher initial production costs. Panasonic, a leading partner and investor in the project, is slated to handle manufacturing.“We decided that by combining Panasonic’s washing and drying machine technology and 7D’s folding technology, it is possible to bring an all-in-one product to the market early,” said Kyoko Ishii, a spokeswoman for Osaka-based Panasonic.Users will still have to do some tasks, such as partially buttoning shirts, ensuring clothes aren’t inside out, and bunching socks before putting them inside the machine, Sakane said. That’s because even the best machine-learning applications can’t help computers figure out how to fold a pair of socks.Each item will take about 10 minutes to fold, which Sakane attributed to the time necessary to scan each part of the clothing and communicate via Wi-Fi with a central server. Sakane is working to get it down to 3-to-5 minutes, but said the robot was designed to be used passively while users are doing something else or out of the house.Sakane isn’t the only one trying to reinvent the washing. FoldiMate Inc., an Oak Park, California-based rival, said it will take about half a minute to de-wrinkle and fold each garment through its dryer-size machine. It’s received more than 160,000 registrations of interest in its laundry-folder, which will require users to clip clothes onto a conveyor-belt from which a robot takes, treats, de-wrinkles and folds each item onto a neat pile.The company will start accepting pre-orders in 2017, once a manufacturing plan has been finalized with partners, it said on its website. First units should ship by 2018 and cost $700 to $850.With Laundroid, users won’t have to clip clothes onto the machine.
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from the campaign trail.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+“The biggest challenge has always been the folding itself, both in terms of planning the fold and then manipulating the piece of clothing and actually performing the folding,” said Jonathan Roberts, a professor of robotics at Queensland University of Technology in Brisbane, Australia. “Others have tried using robotic arms. This is the first time I have seen sliding plates used. That sounds innovative.”Still, it’s questionable whether consumers will spend thousands of dollars for such a device, Roberts said, adding that the world is probably “many years away” until a robot system can do the task cheaply enough. That’s not deterring Sakane. He plans to work with apparel makers and app developers to create software that makes use of the data his robots will collect. Tracking which clothes are worn, when and how often will be invaluable to both marketers and consumers, he said.The robot is just the latest in a series of products Sakane has created. After earning a doctorate in chemistry in the U.S., he worked at his father’s research firm and developed a more-efficient version of guide wires used in surgery.Taking over as CEO a few years later, he bought a company that makes materials used in space satellites and re-purposed it to make high-end golf clubs. Two years ago, he began selling an anti-snoring product -- a tube inserted through the nose -- that has become one of his company’s top sellers.“We’re a zero-synergy company,” Sakane jokes. The wide-range of products is a result of a philosophy to tackle anything as long as it’s a completely new concept. “No matter how good of an idea, if someone else is already working on it or if there’s a patent, we won’t do it.”

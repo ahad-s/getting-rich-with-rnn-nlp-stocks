@@ -1,0 +1,83 @@
+Users of the WeChat instant-messaging platform can have their content censored even if they leave China or switch to an overseas phone number, according to a research group.WeChat accounts registered with a mainland China-based phone number have keywords filtered out or messages blocked anywhere in the world as long they keep the same user name, according to a study by the University of Toronto’s Citizen Lab. Accounts created abroad, such as through carriers in Hong Kong or the U.S., don’t face the same restrictions, it said.“The idea that you can’t escape a censorship system imposed on you at the time of registration is a troubling one,” said Jason Q. Ng, a research fellow at the Citizen Lab.
+
+
+
+
+ Exclusive insights on technology around the world.
+ 
+
+ Get Fully Charged, from Bloomberg Technology.
+ 
+
+
+
+
+
+ Sign Up
+ 
+
+
+
+
+
+
+
+
+
+
+
+Business
+Your guide to the most important business stories of the day, every day.
+
+
+ You will now receive the Business newsletter
+ 
+
+
+
+
+
+Politics
+The latest political news, analysis, charts, and dispatches from the campaign trail.
+
+
+ You will now receive the Politics newsletter
+ 
+
+
+
+
+
+Markets
+The most important market news of the day. So you can sleep an extra five minutes.
+
+
+ You will now receive the Markets newsletter
+ 
+
+
+
+
+
+Pursuits
+What to eat, drink, wear and drive – in real life and your dreams.
+
+
+ You will now receive the Pursuits newsletter
+ 
+
+
+
+
+
+Game Plan
+The school, work and life hacks you need to get ahead.
+
+
+ You will now receive the Game Plan newsletter
+ 
+
+
+
+
+The dual systems are crucial to understanding how Tencent Holdings Ltd. can expand China’s most-popular message service overseas while still complying with domestic government controls on information. With 846 million active users on WeChat, the company scrapes news posts deemed sensitive and blocks private texts containing certain words in both one-on-one and group chats, Citizen Lab’s research on Thursday showed.Canny Lo, a spokeswoman for Tencent, didn’t answer a call to her mobile phone or respond to an e-mail seeking comment on the research.“In recent years, WeChat has faced increased regulatory pressures,” the report said. “This strict regulatory environment has led to suspicions that communications on WeChat may be monitored.”The researchers tested 26,821 keywords that have been blocked on other websites, including Weibo Corp. and YY Inc. They found that 174 words and expressions, such as “Free Tibet” and “ISIS Crisis,” triggered censorship. If those words are detected by WeChat servers in China, the message won’t be sent.More words are monitored in group chats than in one-to-one messages, most likely because of the capability to reach a larger number of users, the study showed. Some words originally blacklisted were found accessible later, and new ones are constantly added, the research found.Tencent also stopped notifying users if their messages were intercepted, making its operations less transparent, said Lotus Ruan, a researcher for Citizen Lab. Texts sent from overseas users to a Chinese account simply wouldn’t appear on the receivers’ app.Tencent is part of a growing number of companies succumbing to censorship to operate in jurisdictions like China. Line Corp. has also filtered keywords for Chinese users, according to a Citizen Lab report in 2014. Facebook is said to be developing a system to scrape content deemed inappropriate by Chinese regulators in order win access back to the market, the New York Times reported last week.

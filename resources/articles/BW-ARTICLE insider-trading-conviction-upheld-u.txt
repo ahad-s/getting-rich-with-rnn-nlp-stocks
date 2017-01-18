@@ -1,0 +1,25 @@
+The U.S. Supreme Court upheld a California insider-trading conviction in a ruling that will make it easier for prosecutors to bring cases against some people on Wall Street and in other parts of the country.
+Ruling in its first insider-trading case in two decades, the justices unanimously said that people can be sent to prison for making trades even when the insider who provided the tip wasn’t trying to make money. The court said it’s enough if the insider gave the information as a gift to someone likely to trade on it.
+More from Bloomberg.com: Trump Slams Air Force One Cost With Tweet to Cancel Boeing Order
+The ruling, which came in the case of onetime Chicago grocery wholesaler Bassam Yacoub Salman, resolves a question that had divided federal appeals courts. It restores some, though not all, of the leverage lost by prosecutors and the Securities and Exchange Commission in 2014 when an appeals court in New York established new requirements for insider-trading cases.
+The New York court’s ruling undercut U.S. Attorney Preet Bharara’s eight-year crackdown on Wall Street cheating and led to more than a dozen insider-trading convictions being thrown out.
+Writing for the high court in Monday’s ruling, Justice Samuel Alito rejected the New York court’s suggestion that the insider must "receive something of a ‘pecuniary or similarly valuable nature’ in exchange for a gift to family or friend."
+More from Bloomberg.com: Trump’s ‘Retribution’ Tax Stirs Questions, GOP Resistance
+Bharara, who last week agreed to remain in the job after Donald Trump takes office as president, hailed the decision.
+“The court stood up for common sense and affirmed what we have been arguing from the outset -- that the law absolutely prohibits insiders from advantaging their friends and relatives at the expense of the trading public,” Bharara said in an e-mailed statement. “Today’s decision is a victory for fair markets and those who believe that the system should not be rigged.”
+ QuickTake on Insider-Trading Case 
+The ruling could undercut efforts by some Wall Street figures to overturn their insider-trading convictions. Among those watching the Supreme Court case were former Goldman Sachs Group Inc. director Rajat Gupta, hedge fund manager Doug Whitman and Galleon Group co-founder Raj Rajaratnam.
+More from Bloomberg.com: Chicago Faces Political Power Outage as Trump Succeeds Obama
+Omega Advisors Inc. founder Leon Cooperman also could be affected. The SEC accused him in September of buying shares in Atlas Pipeline Partners after obtaining insider information. He told investors in a letter that federal prosecutors in New Jersey were also investigating but advised him they wouldn’t pursue charges for now, pending a ruling in the Supreme Court case.
+Prosecutors in California said Salman and a partner earned more than $1.5 million in profits through trades based on inside information. The government said the tips originated with Maher Kara, then a Citigroup Inc. investment banker, who gave the information to his brother, who in turn passed it on to his brother-in-law, Salman.
+The Supreme Court case centered not on Salman’s conduct, but on Kara’s motivations.
+“By disclosing confidential information as a gift to his brother with the expectation that he would trade on it, Maher breached his duty of trust and confidence to Citigroup and its clients,” Alito wrote.
+Federal securities-fraud statutes don’t specifically mention insider trading, but in 1983 the Supreme Court said prosecutions could be based on an insider’s breach of a duty to the company’s shareholders. The ruling, known as Dirks v. SEC, said the insider had to receive a “personal benefit” from the disclosure.
+Alito said the Dirks ruling “easily resolves” the Salman case.
+“Dirks specifies that when a tipper gives inside information to ‘a trading relative or friend,’ the jury can infer that the tipper meant to provide the equivalent of a cash gift,” Alito wrote. “In such situations, the tipper benefits personally because giving a gift of trading information is the same thing as trading by the tipper followed by a gift of the proceeds.”
+Although the high court ruling represents a victory for the government, it doesn’t address a key part of the New York court’s 2014 ruling. That panel also said that prosecutors must prove the person trading on the information knew that it came from an insider who received a personal benefit.
+In the Salman case, a Justice Department lawyer told the justices during arguments in October that government attorneys still must show that the trader knew the information came from someone who was breaching a duty to a company’s shareholders.
+The case is Salman v. United States, 15-628.
+Updates with Bharara reaction in seventh paragraph.
+More from Bloomberg.com
+Read Insider-Trading Prosecutions Backed by U.S. Supreme Court on bloombergpolitics.com

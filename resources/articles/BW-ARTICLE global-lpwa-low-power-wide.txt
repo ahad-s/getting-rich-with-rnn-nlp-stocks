@@ -1,0 +1,56 @@
+DUBLIN--(BUSINESS WIRE)--
+Research and Markets has announced the addition of SNS Research's new report "The LPWA (Low Power Wide Area) Networks Ecosystem: 2017 - 2030 - Opportunities, Challenges, Strategies, Industry Verticals & Forecasts" to their offering.
+This report presents an in-depth assessment of the LPWA networks ecosystem including LPWA technologies, key trends, market drivers, challenges, vertical market applications, deployment case studies, regulatory landscape, standardization, opportunities, future roadmap, value chain, ecosystem player profiles and strategies. The report also presents market size forecasts from 2015 till 2030. The forecasts are segmented for 9 vertical markets and 6 regions.
+Until recently, most M2M and IoT services have largely relied on licensed cellular, wireline and satellite networks for their wide area connectivity requirements. Cellular networks, in particular, have enjoyed significant success in the arena. However, for many low bandwidth IoT applications, traditional cellular networks are deemed too expensive due excessive power consumption and complex protocols that lower battery life. As a result, a number of LPWA (Low Power Wide Area) alternatives have emerged that specifically seek to address these concerns.
+LPWA networks are optimized to provide wide area coverage with minimal power consumption. Typically reliant on unlicensed frequencies, LPWA devices have low data rates, long battery lives and can operate unattended for long periods of time.
+Already prevalent in IoT applications such as smart metering, lighting control and parking management, LPWA networks are expected to make a significant contribution to the M2M and IoT ecosystem, with an estimated $27 Billion in service revenue by 2020.
+The report comes with an associated Excel datasheet suite covering quantitative data from all numeric forecasts presented in the report.
+Key Questions Answered
+- How big is the LPWA networks opportunity?
+- What trends, challenges and barriers are influencing its growth?
+- How is the ecosystem evolving by segment and region?
+- What will the market size be in 2020 and at what rate will it grow?
+- Which regions and submarkets will see the highest percentage of growth?
+- How are smart city initiatives driving LPWA network investments?
+- What are the key performance characteristics of LPWA technologies such as Sigfox, LoRa, NB-IoT, LTE Cat-M1 and EC-GSM-IoT?
+- How does regulation impact the adoption of LPWA networks?
+- Do cellular LPWA networks pose a threat to proprietary LPWA technologies?
+- Who are the key market players and what are their strategies?
+- What strategies should LPWA technology providers, mobile operators, MVNOs, aggregators, IoT platform providers and other ecosystem players adopt to remain competitive?
+Key Findings
+- Already prevalent in IoT applications such as smart metering, lighting control and parking management, LPWA networks are expected to make a significant contribution to the M2M and IoT ecosystem, with an estimated $23 Billion in service revenue by 2020.
+- At present, a majority of LPWA networks are based on proprietary technologies and operate in license-exempt spectrum primarily in sub-GHz bands.
+- With the recent completion of the NB-IoT, LTE Cat-M1 and EC-GSM-IoT standards by the 3GPP, mobile operators are aggressively investing in software upgrades to build their own carrier-grade LPWA networks.
+- By 2020, the report estimates that more than 35% of all LPWA profile IoT devices will be served by NB-IoT, LTE Cat-M1 and EC-GSM-IoT networks.
+- As of Q4'2016, estimates suggest the cost of a typical LPWA module to be $4-18, depending on the specific technology. As LPWA network deployments mature, we expect that the cost per module can drop down to as low as $1-2 in volume quantities.
+Companies Mentioned (Partial List)
+- 3GPP (3rd Generation Partnership Project)
+- Accellus Communication Networks
+- Aclara Technologies
+- Actility
+- Adeunis RF
+- Aerea
+- Altair Semiconductor
+- Altera Corporation
+- AM Telecom
+- AMBER Wireless
+- Archos
+- Arkessa
+- ARM Holdings
+- Arqiva
+- AT&T
+- AT&T Mobility
+- Atim
+- Atmel Corporation
+- Augtek
+- Bouygues Telecom
+- BT Group
+- Cellnex Telecom
+- CG-Wireless
+- Cisco Systems
+- Coronis Systems
+- Digi International
+- DT (Deutsche Telekom)
+For more information about this report visit http://www.researchandmarkets.com/research/kfq4x7/the_lpwa_low
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161207005533/en/

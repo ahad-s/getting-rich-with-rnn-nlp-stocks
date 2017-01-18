@@ -1,0 +1,28 @@
+LONDON--(BUSINESS WIRE)--
+Technavio analysts forecast the global IT spending in energy sector to grow at a CAGR of more than 3% during the forecast period, according to their latest report.
+This Smart News Release features multimedia. View the full release here: http://www.businesswire.com/news/home/20161207005041/en/ 
+The market research study covers the present scenario and growth prospects of the global IT spending in energy sector for 2016-2020. The report also lists IT services, software and hardware as the three major segments for IT spending in the energy sector.
+“IT spending in the energy sector is growing at a significant rate to enhance operational efficiency and adhere to government regulation”, says Amit Sharma, a lead analyst at Technavio for IT spending research.
+Request a sample report: http://www.technavio.com/request-a-sample?report=54907
+Technavio’s sample reports are free of charge and contain multiple sections of the report including the market size and forecast, drivers, challenges, trends, and more.
+Technavio ICT analysts highlight the following market drivers that are contributing to the growth of the global IT spending in energy sector:
+Emergence of industry 4.0 technologies
+Industry 4.0 is also known as the fourth industrial revolution that denotes the industrial use of several modern automation, data exchange, and manufacturing technologies. Industry 4.0 may transform the industrial operational processes through advanced technologies such as IoT, cloud computing, big data and analytics, augmented reality, 3-D printing, and Web2.0. Such developments may help industries to integrate the horizontal and vertical supply chain systems with advancements in information technology.
+Need to comply with regulations and guidelines
+The oil and gas industry must comply with many governments and industry regulations and guidelines. Operators also need to be compliant with environmental standards enforced inside national boundaries. For instance, the industry in the UK is regulated by several statutory bodies, including the Department of Energy and Climate Change (DECC), Environment Agency (EA) in England, Natural Resources Wales (NRW) in Wales, Health and Safety Executive (HSE), and the Scottish Environment Protection Agency (SEPA) in Scotland. Any violations can result in legal issues and penalties for operators.
+Increased spending in public sector projects
+The public-sector spending in the modernization of the energy sector has increased in the various countries such as the US and the UK. The President’s budget in the US has sanctioned USD 32.5 billion for FY2017. This is to support the modernization of the Department of Energy in several functions such as clean energy, nuclear security, science and innovation, and other functions. The DoE is planning to implement analytical tools and IT security software solutions to make an integrated grid system. The analytical solution will help to forecast the demand for energy consumptions as well as help to increase the efficiency of power grids.
+“The UK government plans to spend approximately USD 65 million over the next five years in smart technologies for the energy sector. The UK government is also planning to implement smart power technology to save electricity consumption,” says Amit.
+Digital transformation and automation of energy sector
+Digitization of the energy sector in numerous developed nations such as the US and Singapore has created high demand for IT solutions. Digital transformation in the energy sector is the key enabler of IT spending. Modernization of this sector has increased the procurement of the most advanced IT solutions such as energy analytics and IoT to reduce energy consumption.
+Automation in the energy sector has also attracted investment in IT solutions, with industrial automation solutions such as SCADA and PLC being the top selection of enterprises in 2016. Clean energy initiatives in numerous countries have also helped the market to attract significant IT spending.
+Browse Related Reports:
+Do you need a report on a market in a specific geographical cluster or country but can’t find what you’re looking for? Don’t worry, Technavio also takes client requests. Please contact enquiry@technavio.com with your requirements and our analysts will be happy to create a customized report just for you.
+About Technavio
+Technavio is a leading global technology research and advisory company. The company develops over 2000 pieces of research every year, covering more than 500 technologies across 80 countries. Technavio has about 300 analysts globally who specialize in customized consulting and business research assignments across the latest leading edge technologies.
+Technavio analysts employ primary as well as secondary research techniques to ascertain the size and vendor landscape in a range of markets. Analysts obtain information using a combination of bottom-up and top-down approaches, besides using in-house market modeling tools and proprietary databases. They corroborate this data with the data obtained from various market participants and stakeholders across the value chain, including vendors, service providers, distributors, re-sellers, and end-users.
+If you are interested in more information, please contact our media team at media@technavio.com.
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161207005041/en/
+MULTIMEDIA AVAILABLE:http://www.businesswire.com/news/home/20161207005041/en/
+ .bwalignc {text-align: center !important;} .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}

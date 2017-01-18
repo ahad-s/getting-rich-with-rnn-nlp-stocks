@@ -1,0 +1,18 @@
+EDINBURGH, Scotland--(BUSINESS WIRE)--
+Professor Harald Haas, CSO of pureLiFi and Professor of Mobile Communications at the University of Edinburgh, has received the International Solid State Lighting Alliance (ISA) Award for Outstanding Achievement in Beijing, China this November.
+This Smart News Release features multimedia. View the full release here: http://www.businesswire.com/news/home/20161208005455/en/ 
+The award, presented at the 13th International Forum on Solid State Lighting, relates to Professor Haas’s contribution to diversify the applications of solid state lighting (SSL) technology. 2014 Nobel Prize for Physics winner and previous winner of the Outstanding Achievement, Professor Shuji Nakamura, presented Professor Haas with the award.
+LiFi, which stands for 'light fidelity', is a technology that can transmit data through light and turn the lamps in every office, home, car or streetlight into wireless Internet access points. It offers higher speeds than traditional wireless technology, greater security and the potential to deliver unprecedented bandwidth and data density.
+Professor Haas was recognised as the 'father of LiFi' after introducing the technology to the world at a TED Global talk in 2011, where he demonstrated light fidelity for the first time and coined the term LiFi. The company he founded in 2012, pureLiFi, is at the forefront of the commercialisation of LiFi technology and in 2016 launched the world’s first LiFi dongle - LiFi-X - and integrated LiFi luminaire.
+Professor Haas established the world’s first LiFi centre in 2013, when the LiFi Research & Development Centre opened at the University of Edinburgh. The Centre now leads cutting-edge R&D, including pioneering work into the use of solar panels as receivers in a move which could help tackle Internet access problems in the developing world - the so-called 'digital divide'.
+Prof Haas speaks about the significance of this honour:
+"It has been such a great honour to receive this prestigious award, which I would like to devote to everyone who supported me on this 14 year journey. LiFi is like an undiscovered beach full of pebble stones – under each stone there is something new and exciting to discover, and what is really thrilling is that these discoveries can change our lives and create massive commercial opportunities."
+Comments from the ISA jury included:
+"…[Professor Haas] not only pioneered the novel concept of communication by lighting devices, but also publicized the technology earning him the recognition as the “father of LiFi”. The technique based upon SSL devices is penetrating the market of indoor ICT and certainly will have a great future in the era of Internet of Things. This is a considerable contribution to diversify the applications of SSL technology and open up new markets. His scientific-technical achievement certainly deserves to be awarded."
+pureLiFi CEO Alistair Banham, speaks about the recognition of LiFi technology and Haas’s work,
+"The honour Professor Harald Haas has received from this important organisation is a real indication of his contribution to science and technology as a whole. Harald is the global thought leader in LiFi and the path to innovation he has created for us will change the way the world connects in a high speed wireless future."
+Notes
+
+View source version on businesswire.com: http://www.businesswire.com/news/home/20161208005455/en/
+MULTIMEDIA AVAILABLE:http://www.businesswire.com/news/home/20161208005455/en/
+ .bwlistitemmargb {margin-bottom: 10.0px !important;} ;}
