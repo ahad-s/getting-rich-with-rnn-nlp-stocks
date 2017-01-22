@@ -4,23 +4,27 @@
 
 Top of the line stock predictor from 1995
 
-# Phase 1 
-- Steal all the data - [DONE]
+# Phase 1 (Python)
+- Steal all the data (Web crawler for articles) [DONE]
 - AKA:
   -a web crawler/scraper for getting (timestamped) Bloomberg and (non-timestamped, only for sentiment analysis) Businesswire articles using Yahoo archive, running 24/7
   -downloading intraday level 1 data from Dukascopy for popular US indices, FX rates, oil and some others
 
-# Phase 2 
-- Call Mr. Clean for the data [IN PROGRESS]
+# Phase 2 (Python + Scripting)
+- Call Mr. Clean for the data (Clean & preprocess articles) [DONE]
+- AKA:
+  - Articles gathered were cleaned and preprocessed (ex. removal of stopwords, parsing to proper tokens, etc.) with NLTK
 
-# Phase 3 
-- Convert the stolen data into Skynet [TODO]
+# Phase 3 (Python)
+- Convert the stolen data into Skynet (Sentiment analysis on articles) [DONE]
+- AKA:
+  - Created and trained a word2vec (CBOW) model with the articles gathered using the "gensim" library 
+  - Implemented a single-layer semi-supervised neural network for predicting sentiment of the gathered articles
 
-# Phase 4 
-- Utilize Skynet to win Wall Street [TODO]
-
-# Phase 5 
-- Inject steroided up Skynet into the NYSE
-
-
-(for real though, this will be legit)
+# Phase 4 (C++)
+- Utilize Skynet to win Wall Street [IN PROGRESS]
+- AKA:
+  - Regression of stock prices and article sentiment with a LSTM RNN
+  
+# Phase 5 (????)
+- Inject steroided up Skynet into the NYSE/TSX
