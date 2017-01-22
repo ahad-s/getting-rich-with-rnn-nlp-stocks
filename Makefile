@@ -1,8 +1,8 @@
 CXX = g++-5
-CXXFLAGS = -std=c++14 -Wall -MMD
+CXXFLAGS = -std=c++14 -MMD
 EXEC = skynet
 OBJECTS = skynetPREDICT.o
-DEPENDS = ${OBJCET:.o=.d}
+DEPENDS = ${OBJECT:.o=.d}
 
 $EXEC: ${OBJECTS}
 	${CXX} ${CXXFLAGS} ${OBJECTS} -o ${EXEC}
