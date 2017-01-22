@@ -7,8 +7,8 @@ Top of the line stock predictor from 1995
 # Phase 1 (Python)
 - Steal all the data (Web crawler for articles) [DONE]
 - AKA:
-  -a web crawler/scraper for getting (timestamped) Bloomberg and (non-timestamped, only for sentiment analysis) Businesswire articles using Yahoo archive, running 24/7
-  -downloading intraday level 1 data from Dukascopy for popular US indices, FX rates, oil and some others
+  - A web crawler/scraper for getting (timestamped) Bloomberg and (non-timestamped, only for sentiment analysis) Businesswire articles using Yahoo archive, running 24/7
+  - Downloading intraday level 1 data from Dukascopy for popular US indices, FX rates, oil and some others
 
 # Phase 2 (Python + Scripting)
 - Call Mr. Clean for the data (Clean & preprocess articles) [DONE]
