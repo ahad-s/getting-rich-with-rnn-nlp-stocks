@@ -4,6 +4,8 @@
 
 Top of the line stock predictor from 1995
 
+(A web crawler for news articles + sentiment analysis model (for positivity of text) with a W2V model and a semi-supervised ANN, with article sentiment used as a feature for stock price regression through a (LSTM) RNN)
+
 # Phase 1 (Python)
 - Steal all the data (Web crawler for articles) [DONE]
 - AKA:
