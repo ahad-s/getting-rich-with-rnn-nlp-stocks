@@ -21,12 +21,12 @@ class NNet(object):
 	t1 = HIDDEN x (INPUT + 1)
 	t2 = OUTPUT x (HIDDEN + 1)
 	x = M x (HIDDEN + 1)
-	y = M x 1
+	y = M x 1 --> value will be 2-9
 
 	"""
 
 
-	def __init__(self, reg_const, theta=None):
+	def __init__(self, reg_const=0.01, theta=None):
 		self.INPUT_NEURONS = 300
 		self.HIDDEN_LAYER_1_NEURONS = 200
 		self.OUTPUT_NEURONS = 3
@@ -38,15 +38,10 @@ class NNet(object):
 		self.t1_total = self.INPUT_NEURONS + self.HIDDEN_LAYER_1_NEURONS + 1 
 		self.t2_total = self.HIDDEN_LAYER_1_NEURONS + self.OUTPUT_NEURONS + 1
 
-		if theta is None:
-			theta1, theta2 = get_random_weights(layer_sizes)
-			self.theta = np.hstack([theta1, theta2])
-		else:
-			self.theta = None
+		self.theta1, self.theta2 = get_random_weights(layer_sizes) \
+									if theta is not None else theta
 
-		# theta1/2 are weights from layer 1-2/2-3
-		self.theta1 = None
-		self.theta2 = None
+
 
 	def get_random_weights(layer_sizes):
 		assert layer_sizes is not None and len(layer_sizes) >= 2
@@ -56,15 +51,6 @@ class NNet(object):
 			thetas.append(t)
 		return thetas
 
-
-	def unravel_theta(self, theta):
-
-		theta1 = np.asmatrix(np.reshape(np.take(theta, np.arange(self.theta1_total)), 
-				(self.HIDDEN_NEURONS, self.INPUT_NEURONS + 1)))
-		theta2 = np.asmatrix(np.reshape(np.take(theta, 
-				np.arange(self.theta1_total, self.theta1_total + self.theta2_total)),
-				(self.OUTPUT_NEURONS, self.HIDDEN_NEURONS + 1)))
-		return (theta1, theta2)
 
 	def get_theta_mat(self):
 		return np.asmatrix(self.theta)
@@ -110,7 +96,7 @@ class NNet(object):
 		if activation is None:
 			activation = self.sigmoid_fn()
 
-		theta1, theta2 = self.unravel_theta(theta) # TODO
+		theta1, theta2 = theta # TODO
 
 		num_examples = x.shape[0]
 
@@ -170,12 +156,12 @@ class NNet(object):
 		if theta is None:
 			raise Exception("THETA IS DEAD")
 
+		theta1, theta2 = theta
+
 		if activation is None:
 			activation = self.sigmoid_fn()
 		if activation_grad is None:
 			activation_grad = self.sigmoid_gradient_fn()
-
-		theta1, theta2 = self.unravel_theta(theta) # TODO
 
 		num_examples = x.shape[0]
 
@@ -227,20 +213,15 @@ class NNet(object):
 		t1_grad = D1 * (1/m) + t1_grad_reg
 		t2_grad = D1 * (1/m) + t2_grad_reg
 
-		grad1 = np.asarray(t1_grad).ravel() # .shape = t1.shape
-		grad2 = np.asarray(t1_grad).ravel() # .shape = t2.shape
-		grad = np.hstack([grad1, grad2])
-
-		return grad.transpose()
+		return [t1_grad, t2_grad]
 
 
-	# TODO CHANGE TO SEMI-SUPERVISED
 	def predict(self, x_test, trained_theta, activation=None):
 
 		if activation is None:
 			activation = self.sigmoid_fn()
 
-		theta1, theta2 = unravel_theta(theta)
+		theta1, theta2 = trained_theta
 
 		x_test = self.add_bias_col(x_test)
 
@@ -254,34 +235,42 @@ class NNet(object):
 
 
 	# mini-batch/stochastic gradient descent 
-	def optimize(self, theta, xy_df, num_iters = 100):
+	def optimize(self, theta1, theta2, xy_df, alpha = 0.01, num_iters = 100):
 		total_examples = x.shape[0]
 
-		learn_rate = 0.01
-
 		theta = None
+		perm = np.random.permutation(x.index)
+		xy_df = xy_df.reindex(perm)
+
+		calc_cost_every = 5		
 
 		for i in num_iters:
-			perm = np.random.permutation(x.index)
-			xy_df = xy_df.reindex(perm)
+
+			if (i % 5) == 0:
+				c = self.cost_fn(theta, x, y, self.LAMBDA)
+				print "After [%d] epochs, cost is now [%d]" % (i, c)
+
 
 			while batch_idx < total_examples:
 				batch_end = min(batch_idx + 50, total_examples)
+
 				x_batch = x.as_matrix(['text_tok'])[batch_idx: batch_end, :]
 				y_batch = y.as_matrx(['positivity'])[batch_idx: batch_end, :]
 
-				theta -= learn_rate * grad(theta, x_batch, 
-										y_batch, self.LAMBDA)
+				theta1prime, theta2prime = self.grad_fn([theta1, theta2] ,
+								x_batch, y_batch, reg_const=self.LAMBDA)
+				theta1 -= alpha * theta1prime
+				theta2 -= alpha * theta2prime
 
-		c = self.cost_fn(theta, x, y, self.LAMBDA)
+				batch_idx += 50
 
-		return theta
-		print "After [%d] epochs, cost is now [%d]" % (num_iters, c)
+
+		return [theta1, theta2]
 
 
 	# TRAIN 1200 labelled examples to get theta values
 	# One by one, predict values in dfunlab and then
-	# retrain whole classifier every K unlab examples
+	# retrain whole classifier every semi_window unlab examples
 
 	# accepts pandas DF as input
 	def train(self, df, num_iters = 100, semi_window = 25):
@@ -295,28 +284,20 @@ class NNet(object):
 		df_unlab = df[df['positivity'] == 0]
 		num_unlab_rows = len(df_unlab.index)
 
-		self.theta = self.optimize(self.theta, df_lab)
+		self.theta1, self.theta2 = self.optimize(self.theta, df_lab)
 
 		beg = 0
 
 		while beg < num_unlab_rows:
 			end = min(num_unlab_rows, beg + semi_window)
 			p = self.predict(df_unlab[beg:end]['text_tok']
-							,self.theta)
+							,[self.theta1, self.theta2])
 			df_unlab[beg:end]['positivity'] = p
 
 			self.theta = optimize(self.theta, df_unlab[beg:end], num_iters)
-			beg	 += semi_window
+			beg	+= semi_window
 
 		return theta
-
-	def normalize_text_vspace(self, x_df):
-		x = x_df['']
-
-		# each text_tok is 1x300
-		norm_series = x_df['text_tok'].map()
-		df['']
-
 
 
 class skynetNLP(object):
@@ -325,27 +306,22 @@ class skynetNLP(object):
 	articles_df -- is the dataframe with cols 
 					[headline, articleid, time, positivity, text]
 					this will be referred to as "DF" throughout
-
-	# TODO: only detect positive/negative words in headline because there is usually low hidden meaning
-
-	ORDER:
-	-for each "text" in DF, convert to a list of sentences which are a list of words
-	i.e. text[0] = [[sent1word1, .., sent1wordn1], ... ,
-					 [sentkword1, .., sentnwordn_k]]
-	--> train w2v model with all of vocab
-	--> for each word, create BOW by taking the average of 
-		all output vectors by W2V models 
-	--> semi-supervised SVM ???
 	"""
+
 	def __init__(self, articles_df, SPACE_SIZE = 300):
 		self.sent_maker = load('tokenizers/punkt/english.pickle')
 		self.swords = stopwords.words('english')
 		self.big_list_of_sentences = []
 		self.SPACE_SIZE = SPACE_SIZE
-
 		self.df = self.preprocess_text(articles_df)
+		self.model = None
+
+
+	def build_model(self):
 		self.model = self.build_w2v_model()
 		self.df = self.articles_to_features(self.df)
+
+		return self.df
 
 
 	# this will preprocess already "cleaned" text with heuristics
@@ -439,7 +415,6 @@ class skynetNLP(object):
 
 		return df
 
-
 	def get_sent_list(self):
 		return self.big_list_of_sentences
 
@@ -449,11 +424,28 @@ class skynetNLP(object):
 
 
 def main():
+
+	# example of how to use this
+
 	c = Controller()
 	df = c.get_all_data()
 	hax = skynetNLP(df)
 	# w = hax.articles_to_vecspace(True)
-	w = hax.articles_to_vecspace(False)
+	w_df = hax.build_model()
+	num_classify = int(w_df.shape[0]*0.75)
+	df_train = w_df[:num_classify]
+	df_test = w_df[num_classify:]
+	ann = NNet()
+	theta = ann.train(df_train)
+	pred = ann.predict(df_test, theta)
+
+	print pred
+	# can map these predictions to timestamps stored in metadata 
+	# to PRICES csv
+
+
+
+
 
 if __name__ == '__main__':
 	main()

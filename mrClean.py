@@ -180,15 +180,7 @@ class Cleaner(object):
 		df_labelled['text'] = df_labelled['text'].map(clean_article)
 		df_labelled['headline'] = df_labelled['headline'].map(clean_headline)
 
-		# should be ~5.0 with range from 2-9
-		average_rating = sum(df_labelled['positivity']) / df_labelled.shape[0]
-
-		df_labelled['date'] = df_labelled['date'].map(lambda t: csv_time_parser(t))
-
-		self.df_labelled = df_labelled
-
-		return self.df_labelled
-
+		# should be ~5.0 with range from 2-9 	
 
 	def update_articles(self):
 		self.df_articles = pd.concat([self.df_bbg, self.df_bw, self.df_labelled])
