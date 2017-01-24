@@ -11,8 +11,6 @@ from nltk import word_tokenize
 from gensim.models import Word2Vec
 
 
-# TOOD: sum up all vectors in an article and use that as an article's feature? n = 300 is not too bad...
-
 ZERO_EPSILON = 0.000000001
 
 class NNet(object):
