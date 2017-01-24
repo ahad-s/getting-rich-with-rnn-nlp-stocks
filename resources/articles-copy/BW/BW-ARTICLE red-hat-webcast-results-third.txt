@@ -1,8 +1,0 @@
-RALEIGH, N.C.--(BUSINESS WIRE)--
-Red Hat, Inc. (RHT), the world’s leading provider of open source solutions, will discuss results of its third quarter fiscal year 2017 on Wednesday, December 21, 2016, beginning at 5:00 p.m. ET.
-A live webcast can be accessed on Red Hat’s Investor Relations Web page https://investors.redhat.com and a replay will be available beginning approximately two hours after the conclusion of the live events.
-About Red Hat, Inc.Red Hat is the world’s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage and virtualization technologies. Red Hat also offers award-winning support, training, and consulting services. As a connective hub in a global network of enterprises, partners, and open source communities, Red Hat helps create relevant, innovative technologies that liberate resources for growth and prepare customers for the future of IT. Learn more at http://www.redhat.com.
-Red Hat is a trademark of Red Hat, Inc., registered in the U.S. and other countries. Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.
-
-View source version on businesswire.com: http://www.businesswire.com/news/home/20161201005790/en/
- .bwuline {text-decoration: underline !important;} ;}

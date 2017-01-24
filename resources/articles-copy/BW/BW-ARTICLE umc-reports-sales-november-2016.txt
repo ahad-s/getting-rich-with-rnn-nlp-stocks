@@ -1,9 +1,0 @@
-TAIPEI, Taiwan--(BUSINESS WIRE)--
-United Microelectronics Corporation (NYSE: UMC; TWSE: 2303) (“UMC”), today reported unaudited net sales for the month of November 2016.
-Revenues for November 2016
-(*) All figures in thousands of New Taiwan Dollars (NT$), except for percentages.
-(**) All figures are consolidated
-Additional information about UMC is available on the web at http://www.umc.com.
-
-View source version on businesswire.com: http://www.businesswire.com/news/home/20161208006408/en/
- .bwalignc {text-align: center !important;} .bwnowrap {white-space: nowrap !important;} .bwpadl0 {padding-left: 0.0px !important;} .bwpadr0 {padding-right: 0.0px !important;} .bwsinglebottom {border-bottom-color: black !important; border-bottom-style: solid !important; border-bottom-width: 1.0pt !important;} .bwtablemarginb {margin-bottom: 10.0px !important;} .bwvertalignb {vertical-align: bottom !important;} .bwvertalignm {vertical-align: middle !important;} ;}
