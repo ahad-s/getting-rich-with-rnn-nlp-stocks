@@ -5,8 +5,8 @@
 #include <fstream>
 
 #include <boost/tokenizer.hpp>
-#include <ql/quantlib.hpp> // TODO MAKE NEW FEATURES
 #include <Eigen/Dense>
+#include "RNN.h"
 
 using namespace std;
 using namespace Eigen;
@@ -101,6 +101,34 @@ int main(int argc, char const *argv[])
 						fname(version, pre_stock, freq, 
 						bidask, date_from, date_to);
 
-	MatrixXd tmp = getCSVData<MatrixXd>(csv_name);
+	MatrixXd data = getCSVData<MatrixXd>(csv_name);
+
+	int totalRows = data.rows();
+	int trainRows = data.rows() * 0.75;
+	int testRows = data.rows() * 0.25;
+
+	MatrixXd x_train = data.topRows(trainRows).middleCols(5, 1);
+	MatrixXd y_train = data.topRows(trainRows).col(7);
+
+	MatrixXd x_test = data.bottomRows(testRows).middleCols(5, 1);
+	MatrixXd y_test = data.bottomRows(testRows).col(7);
+
+	bool PREDICT = true;
+	
+	RNN r(data.middleCols(5, 1), 30);
+	r.normalize(x_train);
+	r.normalize(y_train);
+	r.normalize(x_test);
+
+	// x, y, alpha, epoch, check_loss
+	r.trainSGD(x_train, y_train, 0.000000001, 50, 1);
+	if (PREIDCT){
+		MatrixXd p = r.predict(x_test);
+		r.denormalize(p);
+		print("--------------------------------");
+		print(p);
+		print("--------------------------------");
+	}
+
 	return 0;
 }

@@ -1,7 +1,7 @@
 CXX = g++-5
 CXXFLAGS = -std=c++14 -MMD
 EXEC = skynet
-OBJECTS = skynetPREDICT.o
+OBJECTS = skynetPREDICT.o RNN.o
 DEPENDS = ${OBJECT:.o=.d}
 
 $EXEC: ${OBJECTS}
