@@ -1,6 +1,7 @@
 import urllib2
 from bs4 import BeautifulSoup
 import re
+import pickle
 import os.path
 import os
 import time
@@ -8,12 +9,6 @@ import datetime
 import logging
 
 logging.basicConfig(filename="news-logger.log", level=logging.DEBUG)
-
-"""
-::::TODO::::
--handle metadata better in mongodb? --> i.e. have article_id::name::url::provider::
-	-or just default to text approach separate by space and replace spaces in a sentence by "-"
-"""
 
 sites = ['bloomberg', 'businesswire']
 archive_url = "http://finance.yahoo.com/news/provider-%s/?bypass=true" % sites[1]
@@ -50,7 +45,7 @@ def scrape_businesswire_yahoo_webpage(url = ""):
 		filename = "BW-ARTICLE " + title + ".txt"
 
 		if os.path.isfile(folder_prefix + filename):
-			print "NOT RECREATING..."
+			print "not recreating..."
 			return
 
 		txt = urllib2.urlopen(base_url + url).read()
@@ -59,7 +54,7 @@ def scrape_businesswire_yahoo_webpage(url = ""):
 		logging.debug("URL: {}".format(url))
 		return
 
-	print "SCRAPING [%s]..." % url
+	print "scraping [%s]..." % url
 
 
 	soup = BeautifulSoup(txt)
@@ -83,35 +78,36 @@ def scrape_bbg_webpage(url = ""):
 		return
  	try:
 		title = url[url.rfind("/") + 1:]
-		txt = urllib2.urlopen(url).read()
 
+		filename = "BBG-ARTICLE " + title + ".txt"
+
+		if os.path.isfile(folder_prefix + filename):
+			print "not recreating...2"
+			return
+			
+		txt = urllib2.urlopen(url).read()
 		# should only read up to the first "Before it's here, it's on the Bloomberg Terminal"
 		# because after that a new article might start
 		txt = txt[:txt.find("Before it's here, it's on the Bloomberg Terminal")]
 
 	except Exception as e:
+		logging.debug(str(datetime.datetime.now()))
 		logging.debug("ERORR AT BBG-SCRAPE [{}]".format(str(e)))
 		logging.debug("URL: {}".format(url))
 		return
 
-	print "SCRAPING [%s]..." % url
-
-	filename = "BBG-ARTICLE " + title + ".txt"
-
-	if os.path.isfile(folder_prefix + filename):
-		print "NOT RECREATING... "
-		return
+	print "scraping [%s]..." % url
 
 	soup = BeautifulSoup(txt)
-
 	story = ""
+
 	paragraphs = soup.findAll("p", attrs={'class': None})
 	for p in paragraphs:
 		story += p.getText()
 
 	story = re.sub(' +', ' ', story).strip() # removes whitespace
 
-	time = soup.findAll("time")[0].getText()
+	time = soup.findAll("noscript")[0].getText().strip()	
 
 	f = open(folder_prefix + filename, "wb") 
 	f.write(story.encode("utf-8"))
@@ -122,8 +118,6 @@ def scrape_bbg_webpage(url = ""):
 	return story
 
 
-
-# returns 
 def scrape_archive_from_yahoo():
 
 	sites = ['bloomberg', 'businesswire']
@@ -139,7 +133,6 @@ def scrape_archive_from_yahoo():
 		soup = BeautifulSoup(txt)
 
 		def extract_time(time_str):
-			# TODO: parse things like 5 hours ago into time.time()-5hrs in EST
 			return time_str
 
 
@@ -176,12 +169,15 @@ while True:
 					url = url.replace("?cmpid=yhoo.headline", "")
 					scrape_bbg_webpage(url)
 			except Exception as e:
+				logging.debug(str(datetime.datetime.now()))
 				logging.debug("ERORR AT SOME URL [{}]".format(str(e)))
 				logging.debug("URL: {}".format(url))
-				raise e
+				# raise e
 
 	except Exception as e:
+		logging.debug(str(datetime.datetime.now()))
 		logging.debug("ERORR AT INITIAL [{}]".format(str(e)))
-		raise e
-	twohours = 60*60*2 # 7200 seconds == 2 hours
+		# raise e
+		# """
+	twohours = 60*60*0.25 # 15 mins
 	time.sleep(twohours)
