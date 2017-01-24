@@ -13,10 +13,6 @@ from common import get_global_id_counter, next_global_id_counter, \
 
 import chardet
 
-# TODO: Organize control process of scrape->clean->preprocess->W2V->SA->...
-
-# TODO: Release script for adding IDs to existing articles
-
 
 """
 The main TEXT DATAFRAME:

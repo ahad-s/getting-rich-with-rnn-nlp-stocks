@@ -19,13 +19,12 @@ for f in allfiles:
 		or "test" in f.lower()): continue
 
 	df = pd.DataFrame.from_csv(f, sep=',', index_col=None)
+	
 	# time between 8:30am-4pm
 	df['temp'] = df['Local time'].map(m)
 	df = df[df['temp'] == 1][df.columns[:-1]]
 	df['Price'] = (df['Open'] + df['High'] 
 				+ df['Low'] + df['Close']) / 4
 	df = df[['Local time', 'Price', 'Volume']]
-	# print "potato"
 
 	df.to_csv("trading_hours_" + f, index = False)
-# print "potato"

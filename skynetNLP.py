@@ -253,7 +253,7 @@ class NNet(object):
 		return np.transpose(prediction)
 
 
-	# mini-batch gradient descent 
+	# mini-batch/stochastic gradient descent 
 	def optimize(self, theta, xy_df, num_iters = 100):
 		total_examples = x.shape[0]
 
@@ -284,7 +284,7 @@ class NNet(object):
 	# retrain whole classifier every K unlab examples
 
 	# accepts pandas DF as input
-	def train(self, df, num_iters = 10, semi_window = 25):
+	def train(self, df, num_iters = 100, semi_window = 25):
 		# TODO grad desc.
 		# get init_theta (randomized?)
 		# theta = grad_desc()
@@ -292,13 +292,30 @@ class NNet(object):
 		# nonlabelled
 
 		df_lab = df[df['positivity'] != 0]
-		df_unlab df[df['positivity'] == 0]
+		df_unlab = df[df['positivity'] == 0]
 		num_unlab_rows = len(df_unlab.index)
 
 		self.theta = self.optimize(self.theta, df_lab)
-		self.predict()
+
+		beg = 0
+
+		while beg < num_unlab_rows:
+			end = min(num_unlab_rows, beg + semi_window)
+			p = self.predict(df_unlab[beg:end]['text_tok']
+							,self.theta)
+			df_unlab[beg:end]['positivity'] = p
+
+			self.theta = optimize(self.theta, df_unlab[beg:end], num_iters)
+			beg	 += semi_window
 
 		return theta
+
+	def normalize_text_vspace(self, x_df):
+		x = x_df['']
+
+		# each text_tok is 1x300
+		norm_series = x_df['text_tok'].map()
+		df['']
 
 
 
@@ -428,8 +445,7 @@ class skynetNLP(object):
 
 	def skynet_initiate(self):
 		LAMBDA = 0.01
-
-		pass
+		# TODO
 
 
 def main():
@@ -438,15 +454,6 @@ def main():
 	hax = skynetNLP(df)
 	# w = hax.articles_to_vecspace(True)
 	w = hax.articles_to_vecspace(False)
-	word = "happy"
-	# print w[word]
-	# print w[word].shape	
-	# print type(w[word])
-	print "word: [%s]" % word
-	print w.similar_by_word(word)
-	print w.syn0.shape
-	# print w.similarity('woman', 'man')
-	# print hax.get_sent_list()
 
 if __name__ == '__main__':
 	main()

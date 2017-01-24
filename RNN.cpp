@@ -9,15 +9,9 @@ using namespace std;
 using namespace Eigen;
 
 
-/*
-our RNN works as:
-(INPUT) --> U(INPUT) --> W(U(INPUT)) [BPTT] --> V(W(U(INPUT))) = OUTPUT
-*/
-
 void print(auto s){ cout << s << endl; }
 
 
-// data = MxN, M = # examples, N = 7
 RNN::RNN(MatrixXd X, int bpttLen): 
 featureDim(1), outputDim(1), hiddenDim(100), bpttLen(bpttLen), 
 M(X.rows()), N(X.cols()), X(X)
@@ -37,23 +31,20 @@ M(X.rows()), N(X.cols()), X(X)
 void RNN::normalize(MatrixXd &m){
 	for (int i = 0; i < m.cols(); ++i)
 		m.col(i) = (m.col(i).array() - minX(i)) / minMax(i);
-	// m = (m.array() - minX) / (maxX - minX);
 }
 
 void RNN::denormalize(MatrixXd &m){
 	for (int i = 0; i < m.cols(); ++i)
 		m.col(i) = (m.col(i).array() * minMax(i)) + minX(i);
-	// m = (m.array() * (maxX-minX)) + minX;
 
 }
 
-// tanh or reLU?
 // reLU! f(x) = ln(1+e^x)
 MatrixXd RNN::activationState(MatrixXd m){
 	return (m.array().exp() + 1).log();
 }
 
-// softmax/logisitc sigmoid for now?
+// logisitc sigmoid!
 // f(t) = 1/ 1 + e^(-t)
 MatrixXd RNN::activationOutput(MatrixXd m){
 	return (((-1)*m).array().exp() + 1).array().inverse();
@@ -98,7 +89,6 @@ double RNN::cost(MatrixXd &x, MatrixXd &y, double reg_const){
 	}
 	loss = sqrt(loss/n);
 
-
 	// TODO REGULARIZATION
 
 	return loss;
@@ -108,9 +98,7 @@ double RNN::cost(MatrixXd &x, MatrixXd &y, double reg_const){
 boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
 
 	int T = y.rows();
-	// print(-5);
  	boost::array<MatrixXd, 2> a = forwardProp(x);
-	// print(-4);
  	MatrixXd states = a[0];
 
 	// deltaOut is the delta error/difference between output and actual
@@ -121,11 +109,9 @@ boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
 	MatrixXd gradW = MatrixXd(thetaW.rows(), thetaW.cols());
 	MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
 
-	// deltaOut[np.arange(len(y)), y] -= 1
 	int lastState = states.rows() - 1;
 
 	MatrixXd deltaT;
-	// print(0);
 
 	for (int t = T-1; t >= 0; --t)
 	{
