@@ -11,8 +11,6 @@ from common import get_global_id_counter, next_global_id_counter, \
 							reset_global_id_counter, \
 							csv_time_parser, bbg_time_parser
 
-import chardet
-
 
 """
 The main TEXT DATAFRAME:
@@ -44,7 +42,7 @@ class Cleaner(object):
 
 	# cleans articles that are labelled as 'BW' but actually are yahoo-article summaries
 	# of bloomberg articles, so these will just be treated as non-timestamped articles
-	def clean_raw_articles(self, src, path = "resources/articles-copy/"):
+	def clean_raw_articles(self, src, path = "resources/articles-sample/"):
 
 		path = join(path, src)
 		files = [f for f in listdir(path) if isfile(join(path, f))]
@@ -86,18 +84,18 @@ class Cleaner(object):
 		return True
 
 	# default to labelled dataset since that will always be in a valid state
-	def extract_all(self, path="resources/articles-copy", 
+	def extract_all(self, path="resources/articles-sample", 
 					csv_uri="csv/GOD-NEWS-DATA-LABELLED.csv"):
 		self.extract_labelled(csv_uri)
 		self.extract_bw_bbg('BBG', path)
 		self.extract_bw_bbg('BW', path)
 
 
-	def extract_bw_bbg(self, src, path = "resources/articles-copy"):
+	def extract_bw_bbg(self, src, path = "resources/articles-sample"):
 
 		def bbg_time(title):
 			fmeta = open("resources/articles-meta/bbg_title_dates_main.txt", "rb")
-			meta_lines = fmeta.readlines()
+			meta_lines	 = fmeta.readlines()
 			bbg_meta = [s for s in meta_lines if title in s]
 
 			if not bbg_meta:
@@ -123,7 +121,7 @@ class Cleaner(object):
 				time = bbg_time(title) if src == 'BBG' else None
 				src_tag = src.lower()
 				src_id = next_global_id_counter() 
-				positivity = 0 # not classified yet
+				positivity = -10 # not classified yet
 
 				with open(join(folder_path, file), "rb") as farticle:
 					text = farticle.read()
@@ -179,6 +177,9 @@ class Cleaner(object):
 		df_labelled['positivity'] = df_labelled['positivity'].map(clean_positivity)
 		df_labelled['text'] = df_labelled['text'].map(clean_article)
 		df_labelled['headline'] = df_labelled['headline'].map(clean_headline)
+
+		self.df_labelled = df_labelled
+		return self.df_labelled
 
 		# should be ~5.0 with range from 2-9 	
 
