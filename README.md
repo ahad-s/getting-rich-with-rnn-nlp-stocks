@@ -24,7 +24,7 @@ Top of the line stock predictor from 1995
   - Implemented a single-layer semi-supervised neural network for predicting sentiment of the gathered articles
 
 # Phase 4 (C++)
-- Utilize Skynet to win Wall Street [IN PROGRESS]
+- Utilize Skynet to win Wall Street [DONE]
 - AKA:
   - Regression of stock prices and article sentiment with a LSTM RNN
   
