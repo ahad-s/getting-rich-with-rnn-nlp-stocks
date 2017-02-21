@@ -23,9 +23,8 @@ class NNet(object):
 
 	"""
 
-
 	def __init__(self, reg_const=0.01, theta=None):
-		self.INPUT_NEURONS = 300
+		self.INPUT_NEURONS = 100 # = vectorspace size
 		self.HIDDEN_LAYER_1_NEURONS = 200
 		self.OUTPUT_NEURONS = 3
 		self.LAMBDA = reg_const
@@ -174,10 +173,7 @@ class NNet(object):
 			## FP ##
 			a_1 = x[i]
 			z_2 = np.dot(theta1, np.transpose(a_1))
-
 			a_2 = activation(z = z_2) # HIDDEN_NEURONS x 1
-			# a_2 = np.vstack([np.asmatrix([1.0]), a_2]) # (HIDDEN_NEURONS + 1) x 1
-
 			z_3 = np.dot(theta2, a_2)
 			hypoth = activation(z = z_3) 
 
@@ -209,31 +205,43 @@ class NNet(object):
 		return [t1_grad, t2_grad]
 
 
-	def predict(self, x_test, theta1, theta2, activation=None):
+	def predict(self, x_test_orig, theta1, theta2, activation=None):
 
 		if activation is None:
 			activation = self.sigmoid_fn
 
-		x_test = self.add_bias_col(x_test)
+		x_test = x_test_orig['feature_vector']
 
-		a_2 = activation(np.dot(theta1, np.transpose(x_test)))
-		# a_2_biased = np.vstack([np.ones((1, x_test.shape[0])), a_2])
-		a_3 = activation(np.dot(theta2, a_2))
+		x = np.zeros((x_test.shape[0], theta1.shape[1]))
+		for i in xrange(x_test.shape[0]):
+			x[i] = x_test.iloc[i]
 
-		prediction = np.argmax(a_3, axis=0)
+		x_test = x
 
-		return np.transpose(prediction)
+		pred = np.zeros((x_test.shape[0], 1))
+
+		z_2 = activation(np.dot(theta1, np.transpose(x_test)))
+		z_3 = activation(np.dot(theta2, z_2))
+
+		print np.transpose(z_3)
+
+		prediction = np.argmax(z_3, axis=0) - 1
+
+		# for i in xrange(x_test_orig.shape[0]):
+			# x_test_orig.iloc[i]['feature_vector'] = prediction[i]
+		x_test_orig['positivity'] = prediction
+
+		return x_test_orig
 
 
 	# mini-batch/stochastic gradient descent 
-	def optimize(self, theta1, theta2, xy_df, alpha = 1, num_iters = 1000):
+	def optimize(self, theta1, theta2, xy_df, alpha = 0.1, num_iters = 10, calc_cost_every = 5):
 		total_examples = xy_df.shape[0]
 
 		perm = np.random.permutation(xy_df.index)
 		xy_df = xy_df.reindex(perm)
 
 		calc_cost_every = 5
-
 
 		for i in xrange(num_iters):
 
@@ -245,7 +253,7 @@ class NNet(object):
 								xy_df['feature_vector'].as_matrix(), 
 								xy_df['positivity'].as_matrix(), 
 								self.LAMBDA)
-				print "After [%f] epochs, cost is now [%f]" % (i, c)
+				print "After [%d] epochs, cost is now [%f]" % (i, c)
 
 
 			while batch_idx < total_examples:
@@ -275,7 +283,7 @@ class NNet(object):
 	# One by one, predict values in dfunlab and then
 	# retrain whole classifier every semi_window unlab examples
 
-	def train(self, df, num_iters = 10, semi_window = 5):
+	def train(self, df, num_iters = 10, alpha=0.1, calc_cost_every = 5, semi_window = 5):
 
 		df_lab = df[df['positivity'] != -10]
 		df_unlab = df[df['positivity'] == -10]
@@ -284,7 +292,11 @@ class NNet(object):
 
 		# print df_lab['feature_vector'][0].shape
 		# labelled training
-		self.theta1, self.theta2 = self.optimize(self.theta1, self.theta2, df_lab)
+		self.theta1, self.theta2 = self.optimize(self.theta1, self.theta2, 
+									df_lab, 
+									alpha=alpha,
+									num_iters = num_iters, 
+									calc_cost_every = calc_cost_every)
 
 		beg = 0
 
@@ -313,7 +325,7 @@ class skynetNLP(object):
 					this will be referred to as "DF" throughout
 	"""
 
-	def __init__(self, articles_df, SPACE_SIZE = 300):
+	def __init__(self, articles_df, SPACE_SIZE = 100):
 		self.sent_maker = load('tokenizers/punkt/english.pickle')
 		self.swords = stopwords.words('english')
 		self.big_list_of_sentences = []
@@ -428,18 +440,11 @@ class skynetNLP(object):
 	def get_sent_list(self):
 		return self.big_list_of_sentences
 
-	def skynet_initiate(self):
-		LAMBDA = 0.01
-		# TODO
-
-
 def main():
 
 	# example of how to use this
 
 	c = Controller()
-	# df = c.get_all_data()
-
 
 	# then we get 1000/1420 for train data, 210 for test, 210 for CV
 
@@ -460,8 +465,8 @@ def main():
 
 	df = c.get_unlabelled_data()
 
-	x_train_df = pd.concat([x_train_lab, x_train_unlab])
-	y_train_df = pd.concat([y_train_lab, y_train_unlab])
+	x_train_df = pd.concat([x_train_lab, x_train_unlab])[:200]
+	y_train_df = pd.concat([y_train_lab, y_train_unlab])[:200]
 
 	hax = skynetNLP(x_train_df)
 	
@@ -471,11 +476,25 @@ def main():
 	xy_train_df = pd.merge(x_train_df, y_train_df, on='articleid')
 
 	ann = NNet()
-	theta = ann.train(xy_train_df)
-	# pred = ann.predict(df_test, theta)
+	theta1, theta2 = ann.train(xy_train_df, alpha=0.1, num_iters=25, calc_cost_every=1)
+
+	# x_train_df.to_csv("train_df_orig.csv")
+
+	# TODO::::
+	# TODO::::
+	# TODO::::
+	# TODO::::
+	# TODO::::
+	# USE LOGISTIC REGRESSION INSTEAD OF NEURAL NETWORK CUZ SLOW
+
+	# print x_train_df.columns
+	# np.savetxt("theta1.csv", theta1, delimiter=",")
+	# np.savetxt("theta2.csv", theta2, delimiter=",")
+	pred_df = ann.predict(x_train_df, theta1, theta2)
+	# x_train_df.to_csv("train_df_pred.csv")
 
 	# print pred
-	# can map these predictions to timestamps stored in metadata 
+	# can map these predictions to timestasmps stored in metadata 
 	# to PRICES csv
 
 
