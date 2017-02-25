@@ -24,7 +24,7 @@ class NNet(object):
 	"""
 
 	def __init__(self, reg_const=0.01, theta=None):
-		self.INPUT_NEURONS = 100 # = vectorspace size
+		self.INPUT_NEURONS = 10 # = vectorspace size
 		self.HIDDEN_LAYER_1_NEURONS = 200
 		self.OUTPUT_NEURONS = 3
 		self.LAMBDA = reg_const
@@ -223,12 +223,13 @@ class NNet(object):
 		z_2 = activation(np.dot(theta1, np.transpose(x_test)))
 		z_3 = activation(np.dot(theta2, z_2))
 
-		print np.transpose(z_3)
+		# print np.transpose(z_3)
 
-		prediction = np.argmax(z_3, axis=0) - 1
+		prediction = pd.Series(np.argmax(z_3, axis=0) - 1)
 
 		# for i in xrange(x_test_orig.shape[0]):
-			# x_test_orig.iloc[i]['feature_vector'] = prediction[i]
+			# x_test_orig.iloc[i]['positivity'] = prediction[i]
+		# print prediction
 		x_test_orig['positivity'] = prediction
 
 		return x_test_orig
@@ -325,7 +326,7 @@ class skynetNLP(object):
 					this will be referred to as "DF" throughout
 	"""
 
-	def __init__(self, articles_df, SPACE_SIZE = 100):
+	def __init__(self, articles_df, SPACE_SIZE = 10):
 		self.sent_maker = load('tokenizers/punkt/english.pickle')
 		self.swords = stopwords.words('english')
 		self.big_list_of_sentences = []
@@ -334,8 +335,8 @@ class skynetNLP(object):
 		self.model = None
 
 
-	def build_model(self):
-		self.model = self.build_w2v_model()
+	def build_model(self, LOAD= False):
+		self.model = self.build_w2v_model(LOAD=LOAD)
 		self.df = self.articles_to_features(self.df)
 
 		return self.df
@@ -363,6 +364,10 @@ class skynetNLP(object):
 	def build_w2v_model(self, LOAD=False):
 
 		mname = "potato_w2v"
+
+		# google_fname = "/media/patata/New Volume/GoogleNews-vectors-negative300.bin"
+		# self.model = Word2Vec.load_word2vec_format(google_fname, binary=True)  
+		# return self.model
 
 		if LOAD:
 			self.model = Word2Vec.load(mname)
@@ -432,6 +437,21 @@ class skynetNLP(object):
 			return feature
 
 
+		def article_to_sentences(article):
+			sent_list = self.sent_maker.tokenize(article.rstrip())
+			word_list = []
+			for s in sent_list:
+				wtok = word_tokenize(s)
+				word_list.extend(wtok)
+
+			return word_list
+
+
+		# if we load model, don't need to rebuild the whole model, but
+		# still need to tokenize the text
+		if not 'text_tok' in df.columns:
+			df['text_tok'] = df['text'].map(article_to_sentences)
+
 		# will be 1x300 np array
 		df['feature_vector'] = df['text_tok'].map(map_features)
 
@@ -463,22 +483,22 @@ def main():
 	x_train_unlab = unlab_df[x_headers]
 	y_train_unlab = unlab_df[y_headers]
 
-	df = c.get_unlabelled_data()
+	print x_train_unlab
 
-	x_train_df = pd.concat([x_train_lab, x_train_unlab])[:200]
-	y_train_df = pd.concat([y_train_lab, y_train_unlab])[:200]
+	x_train_df = pd.concat([x_train_lab, x_train_unlab])
+	y_train_df = pd.concat([y_train_lab, y_train_unlab])
 
 	hax = skynetNLP(x_train_df)
 	
 	# need to build W2V with ALL articles first
-	x_train_df = hax.build_model()
+	x_train_df = hax.build_model(LOAD=True)
 
 	xy_train_df = pd.merge(x_train_df, y_train_df, on='articleid')
 
 	ann = NNet()
 	theta1, theta2 = ann.train(xy_train_df, alpha=0.1, num_iters=25, calc_cost_every=1)
 
-	# x_train_df.to_csv("train_df_orig.csv")
+	x_train_df.to_csv("train_df_orig.csv")
 
 	# TODO::::
 	# TODO::::
@@ -491,7 +511,8 @@ def main():
 	# np.savetxt("theta1.csv", theta1, delimiter=",")
 	# np.savetxt("theta2.csv", theta2, delimiter=",")
 	pred_df = ann.predict(x_train_df, theta1, theta2)
-	# x_train_df.to_csv("train_df_pred.csv")
+	print pred_df
+	x_train_df.to_csv("train_df_pred.csv")
 
 	# print pred
 	# can map these predictions to timestasmps stored in metadata 

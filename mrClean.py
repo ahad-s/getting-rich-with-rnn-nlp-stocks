@@ -42,7 +42,7 @@ class Cleaner(object):
 
 	# cleans articles that are labelled as 'BW' but actually are yahoo-article summaries
 	# of bloomberg articles, so these will just be treated as non-timestamped articles
-	def clean_raw_articles(self, src, path = "resources/articles-sample/"):
+	def clean_raw_articles(self, src, path = "resources/articles/"):
 
 		path = join(path, src)
 		files = [f for f in listdir(path) if isfile(join(path, f))]
@@ -72,26 +72,28 @@ class Cleaner(object):
 			fr.truncate() # cut text after current seek index
 			fr.close()
 
-		for f in files:
-			fr = open(join(path, f), "rb+")
-			if src == 'BBG':
+		if src == 'BBG':
+			for f in files:
+				fr = open(join(path, f), "rb+")
 				bbg_clean(fr)
-			elif src == 'BW':
+		elif src == 'BW':
+			for f in files:
+				fr = open(join(path, f), "rb+")
 				bw_clean(fr)
-			else:
-				return False
+		else:
+			return False
 
 		return True
 
 	# default to labelled dataset since that will always be in a valid state
-	def extract_all(self, path="resources/articles-sample", 
+	def extract_all(self, path="resources/articles", 
 					csv_uri="csv/GOD-NEWS-DATA-LABELLED.csv"):
 		self.extract_labelled(csv_uri)
 		self.extract_bw_bbg('BBG', path)
 		self.extract_bw_bbg('BW', path)
 
 
-	def extract_bw_bbg(self, src, path = "resources/articles-sample"):
+	def extract_bw_bbg(self, src, path = "resources/articles"):
 
 		def bbg_time(title):
 			fmeta = open("resources/articles-meta/bbg_title_dates_main.txt", "rb")
