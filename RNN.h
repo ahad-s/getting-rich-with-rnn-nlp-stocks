@@ -17,9 +17,20 @@ private:
 	Eigen::MatrixXd minX;
 	Eigen::MatrixXd minMax;
 
-	Eigen::MatrixXd thetaU;
 	Eigen::MatrixXd thetaV;
 	Eigen::MatrixXd thetaW;
+	Eigen::MatrixXd thetaU;
+
+	Eigen::MatrixXd thetaWIn;
+	Eigen::MatrixXd thetaWForget;
+	Eigen::MatrixXd thetaWOut;
+	Eigen::MatrixXd thetaWGate;
+
+	Eigen::MatrixXd thetaUIn;
+	Eigen::MatrixXd thetaUForget;
+	Eigen::MatrixXd thetaUOut;
+	Eigen::MatrixXd thetaUGate;
+
 	Eigen::MatrixXd X;
 public:
 	/* m will have columns:
@@ -50,10 +61,15 @@ public:
 	void normalize(Eigen::MatrixXd &m);
 	void denormalize(Eigen::MatrixXd &m);
 
-	Eigen::MatrixXd activationState(Eigen::MatrixXd m);
-	Eigen::MatrixXd activationOutput(Eigen::MatrixXd m);
-	Eigen::MatrixXd activationGradientFunction(Eigen::MatrixXd &m);
+	Eigen::MatrixXd activationRelU(Eigen::MatrixXd m);
+	Eigen::MatrixXd activationTanh(Eigen::MatrixXd m);
+	Eigen::MatrixXd activationSigmoid(Eigen::MatrixXd m);
 
+	Eigen::MatrixXd gradRelU(Eigen::MatrixXd m);
+	Eigen::MatrixXd gradTanh(Eigen::MatrixXd m);
+	Eigen::MatrixXd gradSigmoid(Eigen::MatrixXd m);
+
+	Eigen::MatrixXd activationGradientFunction(Eigen::MatrixXd &m);
 
 	boost::array<Eigen::MatrixXd, 2> forwardProp(Eigen::MatrixXd x);
 	boost::array<Eigen::MatrixXd, 3> backPropTT(Eigen::MatrixXd x, 
@@ -77,10 +93,6 @@ public:
 								int check_loss_after=1);
 
 	bool gradChecking(double error = 0.01) {return true;};
-
-
-
-
 
 
 };

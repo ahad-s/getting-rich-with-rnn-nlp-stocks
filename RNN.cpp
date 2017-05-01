@@ -11,6 +11,25 @@ using namespace Eigen;
 
 void print(auto s){ cout << s << endl; }
 
+void print2(auto s1, auto s2){ cout << s1 << " " << s2 << endl; }
+
+
+/*
+OVERVIEW OF RNN:
+Structured as:
+
+[OUTPUT LAYER]
+   |
+  [V]
+   |
+[HIDDEN LAYER] --> [W_0] --> [W_1] --> ... --> [W_s]
+   |
+  [U]
+   |
+[INPUT LAYER]
+
+with weights as [U, W, V]
+*/
 
 RNN::RNN(MatrixXd X, int bpttLen): 
 featureDim(1), outputDim(1), hiddenDim(100), bpttLen(bpttLen), 
@@ -36,37 +55,62 @@ void RNN::normalize(MatrixXd &m){
 void RNN::denormalize(MatrixXd &m){
 	for (int i = 0; i < m.cols(); ++i)
 		m.col(i) = (m.col(i).array() * minMax(i)) + minX(i);
-
 }
 
-// reLU! f(x) = ln(1+e^x)
-MatrixXd RNN::activationState(MatrixXd m){
+// reLU! f(x) ~= ln(1+e^x)
+MatrixXd RNN::activationRelU(MatrixXd m){
 	return (m.array().exp() + 1).log();
+}
+
+// tanh! f(x) = tanh(x)
+MatrixXd RNN::activationTanh(MatrixXd m){
+	return m.array().tanh();
 }
 
 // logisitc sigmoid!
 // f(t) = 1/ 1 + e^(-t)
-MatrixXd RNN::activationOutput(MatrixXd m){
-	return (((-1)*m).array().exp() + 1).array().inverse();
-	
+MatrixXd RNN::activationSigmoid(MatrixXd m){
+	return (((-1)*m).array().exp() + 1).array().inverse();	
+}
+
+MatrixXd RNN::gradTanh(MatrixXd m){
+	return 1 - m.array().square();
+}
+
+MatrixXd RNN::gradSigmoid(MatrixXd m){
+	return activationSigmoid(m) * 
+			((-1.0 * activationSigmoid(m).array()) + 1).matrix();
+}
+
+// ??? Eigen sucks ???
+MatrixXd RNN::gradRelU(MatrixXd m){
+	return m;
+	// return m.array() > 0.0;
 }
 
 boost::array<MatrixXd, 2> RNN::forwardProp(MatrixXd x){
+
 	int tSteps = x.rows(); // # examples
 
 	// state matrix
 	MatrixXd states = MatrixXd::Zero(tSteps + 1, hiddenDim);
-	MatrixXd output = MatrixXd::Zero(tSteps, outputDim);
+	MatrixXd y = MatrixXd::Zero(tSteps, outputDim);
+
+	MatrixXd cellIn;
+	MatrixXd cellForget;
+	MatrixXd cellOut;
 
 	for (int t = 0; t < tSteps; ++t)
 	{
 		// states.row(-1) == states.last_row()
-		states.row(t) = activationState((x.row(t) * thetaU) + 
+		states.row(t) = activationTanh((x.row(t) * thetaU) + 
 								(states.row(t > 0 ? t - 1: tSteps - 1) * thetaW));
-		output.row(t) = activationOutput(states.row(t) * thetaV);
+
+
+		y.row(t) = activationSigmoid(states.row(t) * thetaV);
 	}
 
-	return boost::array<MatrixXd, 2>{{states, output}};
+	return boost::array<MatrixXd, 2>{{states, y}};
 }
 
 MatrixXd RNN::predict(MatrixXd &x_test){
@@ -85,8 +129,8 @@ double RNN::cost(MatrixXd &x, MatrixXd &y, double reg_const){
 		MatrixXd out = a[1];
 		loss += pow(y(i) - out(0), 2);
 		// out_i = 1x1, y_i aka y(i, 0) aka y(i) = 1x1
-
 	}
+
 	loss = sqrt(loss/n);
 
 	// TODO REGULARIZATION
@@ -109,26 +153,33 @@ boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
 	MatrixXd gradW = MatrixXd(thetaW.rows(), thetaW.cols());
 	MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
 
+	// MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
+	// MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
+
 	int lastState = states.rows() - 1;
 
 	MatrixXd deltaT;
+
+	// .array() * .array() --> elementwise multiplication
+	// m * m --> matrix multiplication
 
 	for (int t = T-1; t >= 0; --t)
 	{
 		gradV += states.row(t).transpose() * deltaOut.row(t);
 
 		// initial DELTA that holds errors
-		deltaT = (deltaOut.row(t) * thetaV.transpose()).array() 
-				* (1- (states.row(t > 0 ? t-1 : lastState)
-					.array().square()));
+
+		deltaT = gradTanh(states.row(t > 0 ? t-1 : lastState)).array() *
+				(deltaOut.row(t) * thetaV.transpose()).array();		
+
 
 		for (int step = t; step >= max(0, t-bpttLen); --step)
 		{
-			gradW += states.row(step > 0 ? step - 1 : lastState).transpose() * deltaT;
-			gradU += x.row(step).transpose() * deltaT;
-			deltaT = (deltaT * thetaW).array() 
-					* (1 - (states.row(step > 0 ? step -1 : lastState)
-							.array().square()));
+			gradW += states.row(step > 0 ? step - 1 : lastState).transpose() * 
+						deltaT;
+			gradU += x.row(t) * deltaT; // U = nxh, x.row(t) * U
+			deltaT = gradTanh(states.row(step > 0 ? step -1 : lastState)).array()
+					* (deltaT * thetaW).array();
 		}
 	}
 
