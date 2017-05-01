@@ -40,9 +40,15 @@ M(X.rows()), N(X.cols()), X(X)
 	minMax = maxX - minX;
 
 	// weights
+	thetaUUpdate = MatrixXd::Random(featureDim, hiddenDim) * (1/sqrt(N));
+	thetaUReset = MatrixXd::Random(featureDim, hiddenDim) * (1/sqrt(N));
 	thetaU = MatrixXd::Random(featureDim, hiddenDim) * (1/sqrt(N));
-	thetaV = MatrixXd::Random(hiddenDim, outputDim) * (1/sqrt(hiddenDim));
+
+	thetaWUpdate = MatrixXd::Random(hiddenDim, hiddenDim) * (1/sqrt(hiddenDim));
+	thetaWReset = MatrixXd::Random(hiddenDim, hiddenDim) * (1/sqrt(hiddenDim));
 	thetaW = MatrixXd::Random(hiddenDim, hiddenDim) * (1/sqrt(hiddenDim));
+
+	thetaV = MatrixXd::Random(hiddenDim, outputDim) * (1/sqrt(hiddenDim));
 
 }
 
@@ -96,15 +102,31 @@ boost::array<MatrixXd, 2> RNN::forwardProp(MatrixXd x){
 	MatrixXd states = MatrixXd::Zero(tSteps + 1, hiddenDim);
 	MatrixXd y = MatrixXd::Zero(tSteps, outputDim);
 
-	MatrixXd cellIn;
-	MatrixXd cellForget;
-	MatrixXd cellOut;
+	MatrixXd cellUpdate;
+	MatrixXd cellReset;
+	MatrixXd cell;
+
 
 	for (int t = 0; t < tSteps; ++t)
 	{
 		// states.row(-1) == states.last_row()
+		/*
+		FOR GRU -- NEED TO FIX GRADIENTS FOR THIS FIRST
+
+		cellUpdate = activationSigmoid((x.row(t) * thetaUUpdate) +
+					(states.row(t > 0 ? t - 1: tSteps - 1) * thetaWUpdate));
+		cellReset = activationSigmoid((x.row(t) * thetaUReset) +
+					(states.row(t > 0 ? t - 1: tSteps - 1) * thetaWReset));
+		cell = activationTanh((x.row(t)*thetaU) + 
+			(states.row(t > 0 ? t - 1: tSteps - 1).array() * 
+			cellReset.array()).matrix() * thetaW)
+		states.row(t) = (((-1 * cellUpdate.array()) + 1).array() *
+						cell) + 
+						(cellReset.array() * states.row(t > 0 ? t - 1: tSteps - 1).array());
+		*/
+
 		states.row(t) = activationTanh((x.row(t) * thetaU) + 
-								(states.row(t > 0 ? t - 1: tSteps - 1) * thetaW));
+						(states.row(t > 0 ? t - 1: tSteps - 1) * thetaW));
 
 
 		y.row(t) = activationSigmoid(states.row(t) * thetaV);
@@ -153,9 +175,6 @@ boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
 	MatrixXd gradW = MatrixXd(thetaW.rows(), thetaW.cols());
 	MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
 
-	// MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
-	// MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
-
 	int lastState = states.rows() - 1;
 
 	MatrixXd deltaT;
@@ -167,8 +186,11 @@ boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
 	{
 		gradV += states.row(t).transpose() * deltaOut.row(t);
 
-		// initial DELTA that holds errors
 
+		// TOOD: fix gradient/delta calculations for GRU and finish implementation
+		// :: dL/dU, dL/dR, dL/dH, L = loss
+
+		// initial DELTA that holds errors
 		deltaT = gradTanh(states.row(t > 0 ? t-1 : lastState)).array() *
 				(deltaOut.row(t) * thetaV.transpose()).array();		
 
@@ -178,7 +200,7 @@ boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
 			gradW += states.row(step > 0 ? step - 1 : lastState).transpose() * 
 						deltaT;
 			gradU += x.row(t) * deltaT; // U = nxh, x.row(t) * U
-			deltaT = gradTanh(states.row(step > 0 ? step -1 : lastState)).array()
+			deltaT = gradTanh(states.row(step > 0 ? step - 1 : lastState)).array()
 					* (deltaT * thetaW).array();
 		}
 	}

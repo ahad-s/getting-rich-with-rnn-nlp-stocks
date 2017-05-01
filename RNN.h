@@ -18,18 +18,14 @@ private:
 	Eigen::MatrixXd minMax;
 
 	Eigen::MatrixXd thetaV;
+
+	Eigen::MatrixXd thetaWUpdate;
+	Eigen::MatrixXd thetaWReset;
 	Eigen::MatrixXd thetaW;
+
+	Eigen::MatrixXd thetaUUpdate;
+	Eigen::MatrixXd thetaUReset;
 	Eigen::MatrixXd thetaU;
-
-	Eigen::MatrixXd thetaWIn;
-	Eigen::MatrixXd thetaWForget;
-	Eigen::MatrixXd thetaWOut;
-	Eigen::MatrixXd thetaWGate;
-
-	Eigen::MatrixXd thetaUIn;
-	Eigen::MatrixXd thetaUForget;
-	Eigen::MatrixXd thetaUOut;
-	Eigen::MatrixXd thetaUGate;
 
 	Eigen::MatrixXd X;
 public:
