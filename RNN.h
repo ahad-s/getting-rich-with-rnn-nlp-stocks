@@ -10,22 +10,32 @@ private:
 
 	int M; // num examples
 	int N; // num features
-	int hiddenDim;
+	int hiddenDim; // hidden layer dim
+	int Z; // N+hiddenDim -> [h_{t_1}, x_t] stacked length
 	int bpttLen;
 
 	Eigen::MatrixXd maxX;
 	Eigen::MatrixXd minX;
 	Eigen::MatrixXd minMax;
 
+	// Matrix<double, Dynamic, Dynamic> === MatrixXd
+
+	std::map<string, Eigen::MatrixXd> grads;
+
+	Eigen::MatrixXd thetaWUInput;
+	Eigen::MatrixXd thetaWForget;
+	Eigen::MatrixXd thetaWOut;
+	Eigen::MatrixXd thetaWCgate;
+
+	Eigen::MatrixXd biasInput;
+	Eigen::MatrixXd biasForget;
+	Eigen::MatrixXd biasOut;
+	Eigen::MatrixXd biasCgate;
+
 	Eigen::MatrixXd thetaV;
+	Eigen::MatrixXd biasV;
+	// Eigen::MatrixXd thetaWy; // thetaV
 
-	Eigen::MatrixXd thetaWUpdate;
-	Eigen::MatrixXd thetaWReset;
-	Eigen::MatrixXd thetaW;
-
-	Eigen::MatrixXd thetaUUpdate;
-	Eigen::MatrixXd thetaUReset;
-	Eigen::MatrixXd thetaU;
 
 	Eigen::MatrixXd X;
 public:
@@ -47,7 +57,7 @@ public:
 	*/
 
 	// bpttLen = how far to look back, 30 = 30min
-	RNN(Eigen::MatrixXd m, int len);
+	RNN(MatrixXd X, int bpttLen = 25, featureDim = 2, outputDim = 1, hiddenDim = 100);
 	~RNN() {};
 	
 	Eigen::MatrixXd getDateMatrix(); // first 5(? ish)
@@ -67,9 +77,14 @@ public:
 
 	Eigen::MatrixXd activationGradientFunction(Eigen::MatrixXd &m);
 
-	boost::array<Eigen::MatrixXd, 2> forwardProp(Eigen::MatrixXd x);
-	boost::array<Eigen::MatrixXd, 3> backPropTT(Eigen::MatrixXd x, 
-										Eigen::MatrixXd y);
+	std::tuple<Eigen::MatrixXd, 
+				boost::array<Eigen::MatrixXd, 2>, 
+				boost::array<Eigen::MatrixXd, 4>> 
+	forwardProp(Eigen::MatrixXd &x, Eigen::MatrixXd &h_old, Eigen::MatrixXd &c_old);
+
+	std::tuple< shared_ptr<map<std::string, Eigen::MatrixXd>>, 
+				Eigen::MatrixXd, Eigen::MatrixXd >
+	backPropTT(Eigen::MatrixXd x, Eigen::MatrixXd y);
 
 	double cost(Eigen::MatrixXd &x,
 						Eigen::MatrixXd &y,

@@ -1,21 +1,24 @@
-#include <iostream>
-#include <Eigen/Dense>
-#include <vector>	
 #include "RNN.h"
+#include <iostream>
+#include <vector>	
 #include <typeinfo>
 #include <boost/array.hpp>
 
+#include <Eigen/Dense>
+
 using namespace std;
 using namespace Eigen;
+using namespace boost;
 
 
+// debugging tools lol
 void print(auto s){ cout << s << endl; }
 
 void print2(auto s1, auto s2){ cout << s1 << " " << s2 << endl; }
 
 
 /*
-OVERVIEW OF RNN:
+RNN OVERVIEW:
 Structured as:
 
 [OUTPUT LAYER]
@@ -28,120 +31,171 @@ Structured as:
    |
 [INPUT LAYER]
 
-with weights as [U, W, V]
+with weights as [U, W, V], 
+except for LSTM we just make U and W into one weight by stacking [h, X]
+
+---------------------------------------------------------------------------------------------
+
+LSTM OVERVIEW:
+-we follow the model as in "http://colah.github.io/posts/2015-08-Understanding-LSTMs/"
+-using S() = sigmoid(), T() = tanh(), * = mat mult, ** = element mult, b_k = bias for k gate
+
+f_t = S(W_f*[h_{t-1}, x_t] + b_f)
+o_t = S(W_o*[h_{t-1}, x_t] + b_o)
+i_t = S(W_i*[h_{t-1}, x_t] + b_i)
+cc_t = tanh(W_c*[h_{t-1}, x_t] + b_c)
+c_t = f_t**c_{t-1} + i_t**cc_t 
+h = o_t**tanh(c_t)
+
 */
 
-RNN::RNN(MatrixXd X, int bpttLen): 
-featureDim(1), outputDim(1), hiddenDim(100), bpttLen(bpttLen), 
-M(X.rows()), N(X.cols()), X(X)
+
+// TODO: Fix sizes of MatrixXd instead of X-dimensional for most places
+
+// IMPORTANT TODO: Need to add cache for all forw_prop updates
+
+RNN::RNN(MatrixXd X, int bpttLen, featureDim, outputDim, hiddenDim): 
+bpttLen(bpttLen), 
+featureDim(featureDim), 
+outputDim(outputDim), 
+hiddenDim(hiddenDim), 
+Z(hiddenDim + featureDim),
+M(X.rows()), 
+N(X.cols()), 
+X(X)
 {
 	maxX = X.colwise().maxCoeff();
 	minX = X.colwise().minCoeff();
 	minMax = maxX - minX;
 
 	// weights
-	thetaUUpdate = MatrixXd::Random(featureDim, hiddenDim) * (1/sqrt(N));
-	thetaUReset = MatrixXd::Random(featureDim, hiddenDim) * (1/sqrt(N));
-	thetaU = MatrixXd::Random(featureDim, hiddenDim) * (1/sqrt(N));
+	thetaWInput = MatrixXd::Random(Z, hiddenDim) * (1/sqrt(Z));
+	thetaWForget = MatrixXd::Random(Z, hiddenDim) * (1/sqrt(Z));
+	thetaWOutput = MatrixXd::Random(Z, hiddenDim) * (1/sqrt(Z));
+	thetaWCgate = MatrixXd::Random(Z, hiddenDim) * (1/sqrt(Z));
 
-	thetaWUpdate = MatrixXd::Random(hiddenDim, hiddenDim) * (1/sqrt(hiddenDim));
-	thetaWReset = MatrixXd::Random(hiddenDim, hiddenDim) * (1/sqrt(hiddenDim));
-	thetaW = MatrixXd::Random(hiddenDim, hiddenDim) * (1/sqrt(hiddenDim));
+	biasInput = MatrixXd::Random(1, hiddenDim);
+	biasForget = MatrixXd::Random(1, hiddenDim);
+	biasOut = MatrixXd::Random(1, hiddenDim);
+	biasCgate = MatrixXd::Random(1, hiddenDim);
 
 	thetaV = MatrixXd::Random(hiddenDim, outputDim) * (1/sqrt(hiddenDim));
+	biasV = MatrixXd::Random(1, hiddenDim);
 
 }
 
 // TODO: divide prices by one value
-void RNN::normalize(MatrixXd &m){
+void 
+RNN::normalize(MatrixXd &m){
 	for (int i = 0; i < m.cols(); ++i)
 		m.col(i) = (m.col(i).array() - minX(i)) / minMax(i);
 }
 
-void RNN::denormalize(MatrixXd &m){
+void 
+RNN::denormalize(MatrixXd &m){
 	for (int i = 0; i < m.cols(); ++i)
 		m.col(i) = (m.col(i).array() * minMax(i)) + minX(i);
 }
 
+// for consistency
+MatrixXd 
+RNN::activationIdentity(MatrixXd m){
+	return m;
+}
+
 // reLU! f(x) ~= ln(1+e^x)
-MatrixXd RNN::activationRelU(MatrixXd m){
+MatrixXd 
+RNN::activationRelU(MatrixXd m){
 	return (m.array().exp() + 1).log();
 }
 
 // tanh! f(x) = tanh(x)
-MatrixXd RNN::activationTanh(MatrixXd m){
+MatrixXd 
+RNN::activationTanh(MatrixXd m){
 	return m.array().tanh();
 }
 
-// logisitc sigmoid!
+// logistic sigmoid!
 // f(t) = 1/ 1 + e^(-t)
-MatrixXd RNN::activationSigmoid(MatrixXd m){
+MatrixXd 
+RNN::activationSigmoid(MatrixXd m){
 	return (((-1)*m).array().exp() + 1).array().inverse();	
 }
 
-MatrixXd RNN::gradTanh(MatrixXd m){
+MatrixXd 
+RNN::gradTanh(MatrixXd m){
 	return 1 - m.array().square();
 }
 
-MatrixXd RNN::gradSigmoid(MatrixXd m){
+MatrixXd 
+RNN::gradSigmoid(MatrixXd m){
 	return activationSigmoid(m) * 
 			((-1.0 * activationSigmoid(m).array()) + 1).matrix();
 }
 
 // ??? Eigen sucks ???
-MatrixXd RNN::gradRelU(MatrixXd m){
+MatrixXd 
+RNN::gradRelU(MatrixXd m){
 	return m;
 	// return m.array() > 0.0;
 }
 
-boost::array<MatrixXd, 2> RNN::forwardProp(MatrixXd x){
 
-	int tSteps = x.rows(); // # examples
+// returns (predicted_outs, old_states, caches for interm. values)
+// == (y, h, c, cache), cache = [f, i, o, c]
+// cache contains cellInput, forget, etc. to be used for BPTT
+tuple<MatrixXd, MatrixXd, MatrixXd, array<MatrixXd, 4>> 
+RNN::forwardProp(MatrixXd &x, MatrixXd &h_old, MatrixXd &c_old){
+
+	int tSteps = x.rows(); // # examples, should be = 1 for SGD
 
 	// state matrix
-	MatrixXd states = MatrixXd::Zero(tSteps + 1, hiddenDim);
 	MatrixXd y = MatrixXd::Zero(tSteps, outputDim);
 
-	MatrixXd cellUpdate;
-	MatrixXd cellReset;
-	MatrixXd cell;
+	// 1xZ
+	MatrixXd cellForget;
+	MatrixXd cellInput;
+	MatrixXd cellOutput;
+	MatrixXd cellCgate; 
 
+	MatrixXd c;
+	MatrixXd h;
+	MatrixXd y;
 
-	for (int t = 0; t < tSteps; ++t)
-	{
-		// states.row(-1) == states.last_row()
-		/*
-		FOR GRU -- NEED TO FIX GRADIENTS FOR THIS FIRST
+	
+	MatrixXd xPrime = MatrixXd::Zero(tSteps, Z); // 1xZ
+	xPrime << h_old, x; // x' = [h_{t-1}, x_t] stacked --> 1x(h+n)
 
-		cellUpdate = activationSigmoid((x.row(t) * thetaUUpdate) +
-					(states.row(t > 0 ? t - 1: tSteps - 1) * thetaWUpdate));
-		cellReset = activationSigmoid((x.row(t) * thetaUReset) +
-					(states.row(t > 0 ? t - 1: tSteps - 1) * thetaWReset));
-		cell = activationTanh((x.row(t)*thetaU) + 
-			(states.row(t > 0 ? t - 1: tSteps - 1).array() * 
-			cellReset.array()).matrix() * thetaW)
-		states.row(t) = (((-1 * cellUpdate.array()) + 1).array() *
-						cell) + 
-						(cellReset.array() * states.row(t > 0 ? t - 1: tSteps - 1).array());
-		*/
+	// LSTM stuff
+	cellForget = activationSigmoid(xPrime * thetaWForget + biasForget); // 1xZ
+	cellInput = activationSigmoid(xPrime * thetaWInput + biasInput);
+	cellOutput = activationSigmoid(xPrime * thetaWOutput + biasOut);
+	cellCgate = activationTanh(xPrime * thetaWCgate + biasCgate);
 
-		states.row(t) = activationTanh((x.row(t) * thetaU) + 
-						(states.row(t > 0 ? t - 1: tSteps - 1) * thetaW));
+	// 1xZ
+	c = (cellForget.array() * c_old.array()) + (cellInput.array() * cellCgate.array())
 
+	// 1xZ
+	h = cellOutput.array() * activationTanh(c).array();
 
-		y.row(t) = activationSigmoid(states.row(t) * thetaV);
-	}
+	// 1xZ
+	y = activationIdentity(h * thetaV + biasV); // need linearity for regression
 
-	return boost::array<MatrixXd, 2>{{states, y}};
+	array<MatrixXd, 2> states{{c, h}};
+	array<MatrixXd, 4> cache{{cellForget, cellInput, cellOutput, cellCgate}};
+
+	return make_tuple(y, h, c, cache);
 }
 
-MatrixXd RNN::predict(MatrixXd &x_test){
+MatrixXd 
+RNN::predict(MatrixXd &x_test){
 	// since we are only predicting stock price, features out is Mx1
 	return forwardProp(x_test)[1];
 }
 
 
-double RNN::cost(MatrixXd &x, MatrixXd &y, double reg_const){
+double 
+RNN::cost(MatrixXd &x, MatrixXd &y, double reg_const){
 	double loss = 0;
 	int n = x.rows();
 
@@ -155,67 +209,145 @@ double RNN::cost(MatrixXd &x, MatrixXd &y, double reg_const){
 
 	loss = sqrt(loss/n);
 
-	// TODO REGULARIZATION
+	// TODO:: REGULARIZATION
 
 	return loss;
-
 }
 
-boost::array<Eigen::MatrixXd, 3> RNN::backPropTT(MatrixXd x, MatrixXd y){
+
+// returns (map_grad, dh_next, dc_next)
+tuple< map<string, MatrixXd>, MatrixXd, MatrixXd > 
+RNN::backPropTT(MatrixXd &x, MatrixXd &y, 
+				MatrixXd dc_next, MatrixXd dh_next){
 
 	int T = y.rows();
- 	boost::array<MatrixXd, 2> a = forwardProp(x);
- 	MatrixXd states = a[0];
+	// predicted_outs, old_
+	// TODO ADD TO CACHE FROM FPROP
+	// xPrime -- c_old (c_{t-1}, c_{t-2}, etc.) -- 
+ 	tuple<MatrixXd, MatrixXd, MatrixXd, array<MatrixXd, 4>> a = forwardProp(x);
+ 	MatrixXd outs = get<0>(a);
+ 	MatrixXd c = get<1>(a);
+ 	MatrixXd h = get<2>(a);
+ 	auto cache = get<3>(a);
+ 	MatrixXd hf = cache[0];
+ 	MatrixXd hi = cache[1];
+ 	MatrixXd ho = cache[2];
+ 	MatrixXd hc = cache[3]; 
 
-	// deltaOut is the delta error/difference between output and actual
-	MatrixXd deltaOut = a[1] - y;
 
-	// graidents for weights
-	MatrixXd gradU = MatrixXd(thetaU.rows(), thetaU.cols());
-	MatrixXd gradW = MatrixXd(thetaW.rows(), thetaW.cols());
-	MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
+	// graidents for weights, lots of them so we use a dict
+	map<string, MatrixXd> new_g;
+	for (pair<string, MatrixXd> p: grads)
+		new_g[p.first] = MatrixXd::Zero(p.second.rows(), p.second.cols());
 
-	int lastState = states.rows() - 1;
+	// "deltaOut" -- TODO ???? 
+ 	MatrixXd dY = outs; // - y;
 
-	MatrixXd deltaT;
+ 	new_g['dWV'] = h.transpose() * dY;
+ 	new_g['dBV'] = dY;
+ 	MatrixXd dh = dY * thetaV.transpose() + dh_next;
+
+ 	// dh/dout
+ 	MatrixXd dout = gradSigmoid(ho).array() * activationTanh(c).array() * dH.array*();
+
+ 	// dh/dc
+ 	MatrixXd dc = ho.array() * dh.array() * gradTanh(c).array();
+
+ 	// dc/dhf
+ 	MatrixXd dhf = gradSigmoid(hf).array() * c.array();
+
+ 	// dc/dhi
+ 	MatrixXd dhi = gradSigmoid(hi).array() * hc.array() * dc.array();
+
+ 	// dc/dhc
+ 	MatrixXd dhc = gradTanh(hc).array() * hi.array() * dc.array();
+
+ 	// gate grads
+
+ 	new_g['dWF'] = xPrime.transpose() * dhf;
+ 	new_g['dWIn'] = xPrime.transpose() * dhi;
+ 	new_g['dWOut'] = xPrime.transpose() * dho;
+ 	new_g['dWC'] = xPrime.transpose() * dhc;
+
+
+ 	new_g['dBF'] = dhf;
+ 	new_g['dBIn'] = dhi;
+ 	new_g['dBOut'] = dho;
+ 	new_g['dBC'] = dhc;
+
+ 	MatrixXd dX = dhf * thetaWForget.transpose() + 
+ 				  dhi * thetaWInput.transpose() + 
+ 				  dho * thetaWOutput.transpose() +
+ 				  dhc * thetaWCgate.transpose();
+
+ 	dh_next =  dX.leftCols(hiddenDim); // dx[:, :H]
+ 	dc_next = hf.array() * dc.array();
+
+ 	return make_tuple(new_g, dh_next, dc_next);
+
+
+
+	// MatrixXd gradU = MatrixXd(thetaU.rows(), thetaU.cols());
+	// MatrixXd gradW = MatrixXd(thetaW.rows(), thetaW.cols());
+	// MatrixXd gradV = MatrixXd(thetaV.rows(), thetaV.cols());
+
+	// int lastState = states.rows() - 1;
+
+	// MatrixXd deltaT;
 
 	// .array() * .array() --> elementwise multiplication
 	// m * m --> matrix multiplication
 
-	for (int t = T-1; t >= 0; --t)
-	{
-		gradV += states.row(t).transpose() * deltaOut.row(t);
+	// for (int t = T-1; t >= 0; --t)
+	// {
+	// 	gradV += states.row(t).transpose() * deltaOut.row(t);
+
+	// 	// initial DELTA that holds errors
+	// 	deltaT = gradTanh(states.row(t > 0 ? t-1 : lastState)).array() *
+	// 			(deltaOut.row(t) * thetaV.transpose()).array();		
 
 
-		// TOOD: fix gradient/delta calculations for GRU and finish implementation
-		// :: dL/dU, dL/dR, dL/dH, L = loss
+	// 	for (int step = t; step >= max(0, t-bpttLen); --step)
+	// 	{
+	// 		gradW += states.row(step > 0 ? step - 1 : lastState).transpose() * 
+	// 					deltaT;
+	// 		gradU += x.row(t) * deltaT; // U = nxh, x.row(t) * U
+	// 		deltaT = gradTanh(states.row(step > 0 ? step - 1 : lastState)).array()
+	// 				* (deltaT * thetaW).array();
+	// 	}
+	// }
 
-		// initial DELTA that holds errors
-		deltaT = gradTanh(states.row(t > 0 ? t-1 : lastState)).array() *
-				(deltaOut.row(t) * thetaV.transpose()).array();		
-
-
-		for (int step = t; step >= max(0, t-bpttLen); --step)
-		{
-			gradW += states.row(step > 0 ? step - 1 : lastState).transpose() * 
-						deltaT;
-			gradU += x.row(t) * deltaT; // U = nxh, x.row(t) * U
-			deltaT = gradTanh(states.row(step > 0 ? step - 1 : lastState)).array()
-					* (deltaT * thetaW).array();
-		}
-	}
-
-	return boost::array<MatrixXd, 3>{{gradU, gradW, gradV}};
-
+	// return tuple<map<string, MatrixXd, MatrixXd, MatrixXd>(upd_grads, dh_next, dc_next)
+	// return boost::array<MatrixXd, 3>{{gradU, gradW, gradV}};
 }
 
 
-void RNN::trainSGD(MatrixXd &x, MatrixXd &y, 
+void 
+RNN::trainSGD(MatrixXd &x, MatrixXd &y, 
 			double alpha, int epoch, int checkLossEvery){
 
 	vector<double> losses;
 	int examples = y.rows();
 	int currExample = 0;
+	vector< tuple< MatrixXd, MatrixXd, MatrixXd, array<MatrixXd, 4>> > caches;
+
+
+	grads = {
+		{'dWIn', MatrixXd::Zero(thetaWInput.rows(), thetaWInput.cols())},
+		{'dWOut', MatrixXd::Zero(thetaWOutput.rows(), thetaWOutput.cols())},
+		{'dWF', MatrixXd::Zero(thetaWForget.rows(), thetaWForget.cols())},
+		{'dWC', MatrixXd::Zero(thetaWCgate.rows(), thetaWCgate.cols())},
+		{'dWV', MatrixXd::Zero(thetaV.rows(), thetaV.cols())},
+
+		{'dBIn', MatrixXd::Zero(biasInput.rows(), biasInput.cols())},
+		{'dBOut', MatrixXd::Zero(biasOut.rows(), biasOut.cols())},
+		{'dBF', MatrixXd::Zero(biasForget.rows(), biasForget.cols())},
+		{'dBC', MatrixXd::Zero(biasCgate.rows(), biasCgate.cols())},
+		{'dBV', MatrixXd::Zero(biasV.rows(), biasV.cols())},
+	};
+
+
+	// TODO fprop
 
 	cout << "Starting training..." << endl;
 	for (int e = 0; e < epoch; ++e)
@@ -241,10 +373,7 @@ void RNN::trainSGD(MatrixXd &x, MatrixXd &y,
 		{
 			// cout << "currently on example" << i << "..." << endl;
 
-			boost::array<MatrixXd, 3> a = backPropTT(x.row(i), y.row(i));
-			MatrixXd dU = a[0];
-			MatrixXd dW = a[1];
-			MatrixXd dV = a[2];
+			auto a = backPropTT(x.row(i), y.row(i));
 
 			thetaU -= alpha * dU;
 			thetaW -= alpha * dW;
