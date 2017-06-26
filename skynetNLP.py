@@ -6,6 +6,9 @@ from nltk.data import load
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.cross_validation import train_test_split
+
 from mindController import Controller
 
 from gensim.models import Word2Vec
@@ -60,7 +63,6 @@ class NNet(object):
 	# z = 0 --> 0.25, large neg/pos z --> ~0
 	def sigmoid_gradient_fn(self, z):
 		return np.multiply(self.sigmoid_fn(z), (1 - self.sigmoid_fn(z)))
-
 
 	# for deep learning, to not lose gradient as we go forward
 	def softplus_fn(self, z):
@@ -460,11 +462,115 @@ class skynetNLP(object):
 	def get_sent_list(self):
 		return self.big_list_of_sentences
 
+
+
+def rearrange_df_for_rf(x):
+	if x is None:
+		return x
+
+	# right now we have a 1000x1 DF, the 1 is a list of word embeddings
+	x = x.apply(lambda r: r.flatten())
+	return pd.DataFrame(np.array([x.iloc[i] for i in xrange(x.shape[0])]))
+
+# returns (percent_correct, x_test_pred) for semi-supervised use
+def random_forest_supervised_results(x_train, y_train, x_test, y_test = None):
+
+	print "starting random_forest classifier..."
+
+	# TUNING PARAMS
+	n_estimators = 1000
+	min_samples_leaf = 50
+	max_features = "log2" # normally auto = sqrt(n_features)
+
+	print "fitting data..."
+
+	rf = RandomForestClassifier(n_estimators = n_estimators, 
+								max_features = max_features, 
+								min_samples_leaf = min_samples_leaf)
+	rf.fit(x_train, y_train)
+
+	print "predicting data..."
+
+	pred = rf.predict(x_test)
+
+	pct = 0.0
+	total = 0.0
+
+	if y_test is not None: # we have labels
+		y_vals = y_test.values
+
+		corr = 0.0
+		for i in xrange(len(pred)):
+			try:
+				if y_vals[i] != 0 and pred[i] == y_vals[i]:
+					corr += 1
+
+				if y_vals[i] != 0:
+					total += 1
+			except:
+				print "broken at index %d" % i
+				break
+
+		pct = corr / total
+
+		print "[%d] CORRECT out of [%d]" % (corr, total)
+		print "CORRECT PERCENTAGE:", pct
+	else:
+		print "SEMI-SUPERVISED RUN!"
+
+	# otherwise, we want semi-supervised, have no labels
+
+	return (pct, pred)
+
+def random_forest_semi_supervised_results(x_train, y_train, x_unlab, x_test, y_test):
+	# x_test, y_test = tests
+
+	# this returns already rearranged data
+	pct, y_unlab = random_forest_supervised_results(x_train, y_train, x_unlab)
+
+	y_unlab = pd.DataFrame(y_unlab)
+
+	new_x_train = pd.concat([x_train, x_unlab])
+	new_y_train = pd.concat([y_train, y_unlab])
+
+	old_pct, old_pred = random_forest_supervised_results(x_train, y_train, x_test, y_test)
+
+	new_pct, y_unlab = random_forest_supervised_results(new_x_train, new_y_train,
+															x_test, y_test)
+
+	print "NON-SEMISUPERVISED CORRECT:", old_pct
+	print "SEMISUPERVISED CORRECT:", new_pct
+
+	return new_pct
+
+def random_forest_wrapper(train, test, unlab = None, semi=False):
+
+	x_train, y_train = train
+	x_test, y_test = test
+	x_unlab = unlab 
+
+	print "rearranging dataframes..."
+
+	x_train, x_test, x_unlab = [rearrange_df_for_rf(x) for x in 
+												(x_train, x_test, x_unlab)]
+
+	if semi:
+		return random_forest_semi_supervised_results(x_train, y_train, x_unlab, x_test, y_test)
+	else:
+		return random_forest_supervised_results(x_train, y_train, x_test, y_test)
+
+
 def main():
 
 	# example of how to use this
 
 	c = Controller()
+
+	USE_ANN = False
+	USE_RF = True
+
+	RESTRICT_UNLABELLED = True
+	unlab_restriction = 2000
 
 	# then we get 1000/1420 for train data, 210 for test, 210 for CV
 
@@ -476,6 +582,9 @@ def main():
 
 	unlab_df = c.get_unlabelled_data()
 
+	if RESTRICT_UNLABELLED:
+		unlab_df = unlab_df.head(unlab_restriction)
+
 	# order of headers matters
 	x_headers = ['headline','articleid', 'date', 'text']
 	y_headers = ['articleid' , 'positivity']
@@ -483,43 +592,53 @@ def main():
 	x_train_unlab = unlab_df[x_headers]
 	y_train_unlab = unlab_df[y_headers]
 
-	print x_train_unlab
-
 	x_train_df = pd.concat([x_train_lab, x_train_unlab])
 	y_train_df = pd.concat([y_train_lab, y_train_unlab])
 
-	hax = skynetNLP(x_train_df)
-	
-	# need to build W2V with ALL articles first
-	x_train_df = hax.build_model(LOAD=True)
+	if USE_ANN:
+		hax = skynetNLP(x_train_df)
+		
+		# need to build W2V with ALL articles first
+		x_train_df = hax.build_model(LOAD=True)
 
-	xy_train_df = pd.merge(x_train_df, y_train_df, on='articleid')
+		xy_train_df = pd.merge(x_train_df, y_train_df, on='articleid')
 
-	ann = NNet()
-	theta1, theta2 = ann.train(xy_train_df, alpha=0.1, num_iters=25, calc_cost_every=1)
+		ann = NNet()
+		theta1, theta2 = ann.train(xy_train_df, alpha=0.1, num_iters=25, calc_cost_every=1)
 
-	x_train_df.to_csv("train_df_orig.csv")
+		x_train_df.to_csv("train_df_orig.csv")
 
-	# TODO::::
-	# TODO::::
-	# TODO::::
-	# TODO::::
-	# TODO::::
-	# USE LOGISTIC REGRESSION INSTEAD OF NEURAL NETWORK CUZ SLOW
+		pred_df = ann.predict(x_train_df, theta1, theta2)
+		print pred_df
+		x_train_df.to_csv("train_df_pred.csv")
+	else:
 
-	# print x_train_df.columns
-	# np.savetxt("theta1.csv", theta1, delimiter=",")
-	# np.savetxt("theta2.csv", theta2, delimiter=",")
-	pred_df = ann.predict(x_train_df, theta1, theta2)
-	print pred_df
-	x_train_df.to_csv("train_df_pred.csv")
+		# note: we are always using the pre-built model called potatow2v, this is just temporary bad engineering lol
+		hax = skynetNLP(x_train_lab)
+		hax_test = skynetNLP(x_test_lab)
+		hax_unlab = skynetNLP(x_train_unlab)
+
+		# need to build W2V with ALL articles first
+		x_train_lab = hax.build_model(LOAD=True)
+		x_train_lab = x_train_lab['feature_vector']
+
+		y_train_lab = y_train_lab['positivity']
+
+		x_test_lab = hax_test.build_model(LOAD=True)
+		x_test_lab = x_test_lab['feature_vector']
+
+		y_test_lab = y_test_lab['positivity']
+
+		x_train_unlab = hax_unlab.build_model(LOAD=True)
+		x_train_unlab = x_train_unlab['feature_vector']
+
+		rf_semi_accuracy = random_forest_wrapper((x_train_lab, y_train_lab), 
+												(x_test_lab, y_test_lab), 
+												x_train_unlab, semi = True)
 
 	# print pred
 	# can map these predictions to timestasmps stored in metadata 
 	# to PRICES csv
-
-
-
 
 
 if __name__ == '__main__':
